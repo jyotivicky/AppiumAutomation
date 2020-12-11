@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="40753" started-at="2020-12-11T06:49:58Z" finished-at="2020-12-11T06:50:38Z">
+    <groups>
+    </groups>
+    <test name="Mobile Automation Test" duration-ms="40753" started-at="2020-12-11T06:49:58Z" finished-at="2020-12-11T06:50:38Z">
+      <class name="com.TestCases.LoginTest">
+        <test-method status="PASS" signature="startAppiumServer()[pri:0, instance:com.TestCases.LoginTest@6ec8211c]" name="startAppiumServer" is-config="true" duration-ms="5120" started-at="2020-12-11T12:19:53Z" finished-at="2020-12-11T12:19:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAppiumServer -->
+        <test-method status="PASS" signature="DriverInitializataion(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.TestCases.LoginTest@6ec8211c]" name="DriverInitializataion" is-config="true" duration-ms="20057" started-at="2020-12-11T12:19:58Z" finished-at="2020-12-11T12:20:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[emulator-5554]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9.0]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Pixel_2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DriverInitializataion -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.TestCases.LoginTest@6ec8211c]" name="beforeClass" is-config="true" duration-ms="9285" started-at="2020-12-11T12:20:18Z" finished-at="2020-12-11T12:20:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="startVideoRecording()[pri:0, instance:com.TestCases.LoginTest@6ec8211c]" name="startVideoRecording" is-config="true" duration-ms="1332" started-at="2020-12-11T12:20:27Z" finished-at="2020-12-11T12:20:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startVideoRecording -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.TestCases.LoginTest@6ec8211c]" name="beforeMethod" is-config="true" duration-ms="360" started-at="2020-12-11T12:20:28Z" finished-at="2020-12-11T12:20:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="InvalidUsernameTest()[pri:1, instance:com.TestCases.LoginTest@6ec8211c]" name="InvalidUsernameTest" duration-ms="7410" started-at="2020-12-11T12:20:29Z" finished-at="2020-12-11T12:20:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvalidUsernameTest -->
+        <test-method status="PASS" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.LoginTest@6ec8211c]" name="stopVideoRecording" is-config="true" duration-ms="1186" started-at="2020-12-11T12:20:36Z" finished-at="2020-12-11T12:20:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=InvalidUsernameTest status=SUCCESS method=LoginTest.InvalidUsernameTest()[pri:1, instance:com.TestCases.LoginTest@6ec8211c] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopVideoRecording -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.TestCases.LoginTest@6ec8211c]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-12-11T12:20:36Z" finished-at="2020-12-11T12:20:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.TestCases.LoginTest@6ec8211c]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-12-11T12:20:37Z" finished-at="2020-12-11T12:20:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.TestCases.LoginTest@6ec8211c]" name="afterTest" is-config="true" duration-ms="1080" started-at="2020-12-11T12:20:37Z" finished-at="2020-12-11T12:20:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="stopAppiumServer()[pri:0, instance:com.TestCases.LoginTest@6ec8211c]" name="stopAppiumServer" is-config="true" duration-ms="116" started-at="2020-12-11T12:20:40Z" finished-at="2020-12-11T12:20:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopAppiumServer -->
+      </class> <!-- com.TestCases.LoginTest -->
+    </test> <!-- Mobile Automation Test -->
+  </suite> <!-- Suite -->
+</testng-results>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+<!-- Error Text -->
+<string name="err_invalid_username_or_password">Username and password do not match any user in this service.</string>
+<string name="product_title">PRODUCTS</string>
+<!-- Products Page SLB product details -->
+<string name="products_page_Bag_title">Sauce Labs Backpack</string>
+<string name="products_page_Bag_price">$29.99</string>
+<!-- Product Details Page SLB product details -->
+<string name="products_page_Bag_title">Sauce Labs Backpack</string>
+<string name="product_details_page_Bag_description">carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.</string>
+<string name="product_details_page_Bag_price">$29.99</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Suite" parallel="false">
+	<listeners>
+
+		<listener class-name="com.Listener.TestListner"/>
+
+	</listeners>
+	
+	<test name="Mobile Automation Test">
+
+		    <parameter name = "emulator" value = "true" />
+			<parameter name = "platformName" value = "Android" />
+			<parameter name = "platformVersion" value = "9.0" />
+		 	<parameter name = "deviceName" value = "Pixel_2" />
+		    <parameter name = "udid" value = "emulator-5554" />
+		    
+		<classes>
+			<class name="com.TestCases.LoginTest"/>
+		</classes>
+	</test>
+</suite> 

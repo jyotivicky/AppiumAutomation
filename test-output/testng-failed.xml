@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="emulator" value="true"/>
+  <parameter name="platformVersion" value="9.0"/>
+  <parameter name="platformName" value="Android"/>
+  <parameter name="udid" value="emulator-5554"/>
+  <parameter name="deviceName" value="Pixel_2"/>
+  <listeners>
+    <listener class-name="com.Listener.TestListner"/>
+  </listeners>
+  <test name="Mobile Automation Test">
+    <parameter name="emulator" value="true"/>
+    <parameter name="platformVersion" value="9.0"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="udid" value="emulator-5554"/>
+    <parameter name="deviceName" value="Pixel_2"/>
+    <classes>
+      <class name="com.TestCases.LoginTest"/>
+    </classes>
+  </test> <!-- Mobile Automation Test -->
+</suite> <!-- Failed suite [Suite] -->
