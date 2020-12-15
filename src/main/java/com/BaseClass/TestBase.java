@@ -237,6 +237,12 @@ import org.testng.annotations.BeforeSuite;
 					cap.setCapability("avd", deviceName);
 					cap.setCapability("avdLaunchTimeout", 120000);
 				} 
+							
+//				String systemAndroidApp = System.getProperty("user.dir") + File.separator + "src" + 
+//				File.separator + "test" + File.separator + "resources" + 
+//			    File.separator + "APK_FILES" + File.separator + "SauceLab.apk";
+//				cap.setCapability("app", systemAndroidApp);
+				
 				driver = new AndroidDriver(appiumURL, cap);
 				break;
 
