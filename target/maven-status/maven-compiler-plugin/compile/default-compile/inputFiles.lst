@@ -1,12 +1,13 @@
 D:\ProjectSelenium\Appium_Framework\src\main\java\com\utility\PageUtils.java
-D:\ProjectSelenium\Appium_Framework\src\main\java\com\Pages\LoginPage.java
 D:\ProjectSelenium\Appium_Framework\src\main\java\com\Pages\SettingPage.java
 D:\ProjectSelenium\Appium_Framework\src\main\java\com\Pages\MenuPage.java
 D:\ProjectSelenium\Appium_Framework\src\main\java\com\Report\TestReport.java
-D:\ProjectSelenium\Appium_Framework\src\main\java\com\utility\mobileBot.java
 D:\ProjectSelenium\Appium_Framework\src\main\java\com\BaseClass\TestBase.java
-D:\ProjectSelenium\Appium_Framework\src\main\java\com\utility\ReadConfig.java
 D:\ProjectSelenium\Appium_Framework\src\main\java\com\Pages\ProductDetailsPage.java
 D:\ProjectSelenium\Appium_Framework\src\main\java\com\Pages\ProductPage.java
 D:\ProjectSelenium\Appium_Framework\src\main\java\com\Listener\TestListner.java
+D:\ProjectSelenium\Appium_Framework\src\main\java\com\BaseClass\BrowserStackClass.java
+D:\ProjectSelenium\Appium_Framework\src\main\java\com\Pages\LoginPage.java
+D:\ProjectSelenium\Appium_Framework\src\main\java\com\utility\mobileBot.java
+D:\ProjectSelenium\Appium_Framework\src\main\java\com\utility\ReadConfig.java
 D:\ProjectSelenium\Appium_Framework\src\main\java\com\utility\TestUtility.java

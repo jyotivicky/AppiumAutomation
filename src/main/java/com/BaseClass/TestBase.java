@@ -237,28 +237,8 @@ import org.testng.annotations.BeforeSuite;
 					cap.setCapability("avd", deviceName);
 					cap.setCapability("avdLaunchTimeout", 120000);
 				} 
-				
-//				String systemAndroidApp = System.getProperty("user.dir") + File.separator + "src" + 
-//				File.separator + "test" + File.separator + "resources" + 
-//			    File.separator + "APK_FILES" + File.separator + "SauceLab.apk";
-//				cap.setCapability("app", systemAndroidApp);
-
-//			    String androidAppUrl = getClass().getClassLoader().getResource(props.getProperty("androidAppLocation")).getFile();
-//				cap.setCapability("app", androidAppUrl);
-//				utility.log().info("appUrl is" + androidAppUrl);
-				
 				driver = new AndroidDriver(appiumURL, cap);
 				break;
-
-//			case "iOS":
-//				cap.setCapability("automationName", props.getProperty("iOSAutomation"));
-//				String iOSAppUrl = getClass().getResource(props.getProperty("iOSAppLocation")).getFile();
-//				cap.setCapability("appPackage", props.getProperty("Apppackage"));
-//				cap.setCapability("appActivity", props.getProperty("Appactivity"));
-//				String iosAppURL = getClass().getClassLoader().getResource(props.getProperty("IosAppLocation")).getFile();
-//				cap.setCapability("app", iosAppURL);
-//				driver = new IOSDriver(appiumURL, cap);
-//				break;
 
 			default:
 				throw new Exception("Invalid platform! - " + platformName);
