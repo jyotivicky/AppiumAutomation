@@ -10,8 +10,12 @@ public class ProductPage extends MenuPage {
 	@AndroidFindBy(xpath = "(//android.widget.TextView[@content-desc=\"test-Item title\"])[1]")
 	private MobileElement bagTitle;
 	
-	@AndroidFindBy(xpath = "//android.widget.ScrollView[@content-desc=\"test-PRODUCTS\"]/preceding-sibling::android.view.ViewGroup/android.widget.TextView") 
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='PRODUCTS']") 
 	private MobileElement PageTitle;
+	
+	
+	public @AndroidFindBy(xpath = "//android.widget.TextView[@text='PRODUCTS']") static MobileElement Hotel;
+
 
 	@AndroidFindBy(xpath = "(//android.widget.TextView[@content-desc=\"test-Price\"])[1]")
 	private MobileElement bagPrice;

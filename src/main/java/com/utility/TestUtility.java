@@ -22,6 +22,10 @@ import com.BaseClass.TestBase;
 
     public class TestUtility {
 
+    /*
+     * To get the Validation and Test Data messages from XML files for the validation 
+     * messages and Test Data, which we can get based the String	
+     */
 	public HashMap<String, String> parseStringXML(InputStream file) throws Exception {
 		HashMap<String, String> stringMap = new HashMap<String, String>();
 		// Get Document Builder
@@ -51,12 +55,18 @@ import com.BaseClass.TestBase;
 		return stringMap;
 	}
 	
+	/*
+	 *To get the Time and Date to add in the Report 
+	 */
 	public String dateTime() {
 		DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd-HH-mm-ss");
 		Date date = new Date();
 		return dateFormat.format(date);
 	}
 
+	/*
+	 * To get the Log messages and Print it on to the Log File
+	 */
 	public void log(String txt) {
 		TestBase base = new TestBase();
 

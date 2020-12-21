@@ -16,7 +16,7 @@ import com.utility.TestUtility;
 import com.Report.TestReport;
 import com.aventstack.extentreports.Status;
 import com.utility.GetAppiumStatus;
-import com.utility.PageUtils;
+import com.utility.TimeUtils;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -229,7 +229,7 @@ import org.testng.annotations.BeforeSuite;
 	}
 
 	public void waitForVisibilty(MobileElement element) {
-		WebDriverWait wait = new WebDriverWait(driver, PageUtils.Wait);
+		WebDriverWait wait = new WebDriverWait(driver, TimeUtils.Wait);
 		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 

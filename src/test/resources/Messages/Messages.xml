@@ -10,4 +10,8 @@
 <string name="products_page_Bag_title">Sauce Labs Backpack</string>
 <string name="product_details_page_Bag_description">carry.allTheThings() with the sleek, streamlined Sly Pack that melds uncompromising style with unequaled laptop and tablet protection.</string>
 <string name="product_details_page_Bag_price">$29.99</string>
+
+<string name="invalid_credential_status_msg">User not able to login with invalid username and password</string>
+<string name="Valid_credential_status_msg">User able to login with valid username and password sucessfully</string>
+
 </resources>

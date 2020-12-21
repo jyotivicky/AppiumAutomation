@@ -5,7 +5,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
-    public class PageUtils {
+    public class TimeUtils {
 	public static final long Wait = 20;
 	public static final int Wait_2000 = 2000;
 	public static final int Wait_3000 = 3000;

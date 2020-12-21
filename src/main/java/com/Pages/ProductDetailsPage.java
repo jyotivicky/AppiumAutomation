@@ -1,7 +1,7 @@
 package com.Pages;
 
 import com.BaseClass.TestBase;
-import com.utility.mobileBot;
+import com.utility.MobileBot;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 import io.appium.java_client.pagefactory.iOSXCUITFindBy;
