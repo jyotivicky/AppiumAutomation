@@ -6,7 +6,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 
     public class YourCartPage extends TestBase{
 	
-	@AndroidFindBy(xpath = "//android.widget.TextView[text()='YOUR CART']")private MobileElement YourCart;
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='YOUR CART']") private MobileElement YourCart;
 	
 	@AndroidFindBy(accessibility = "test-CHECKOUT") private MobileElement CheckOut;
 

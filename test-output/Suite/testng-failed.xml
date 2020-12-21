@@ -16,7 +16,7 @@
     <parameter name="udid" value="emulator-5554"/>
     <parameter name="deviceName" value="Pixel_2"/>
     <classes>
-      <class name="com.TestCases.LoginTest"/>
+      <class name="com.TestCases.ProductCheckOutTest"/>
     </classes>
   </test> <!-- Mobile Automation Test on Pixel 2 -->
 </suite> <!-- Failed suite [Suite] -->

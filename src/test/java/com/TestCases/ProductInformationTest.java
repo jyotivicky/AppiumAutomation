@@ -19,7 +19,7 @@ import org.json.JSONTokener;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-    public class ProductTest extends TestBase {
+    public class ProductInformationTest extends TestBase {
 	LoginPage loginPage;
 	ProductPage productPage;
 	JSONObject loginUsers;

@@ -8,9 +8,9 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 
    public class CheckoutOverviewPage extends TestBase{
 	   
-		@AndroidFindBy(xpath = "//android.widget.TextView[text()='CHECKOUT: OVERVIEW']") private MobileElement CheckoutOverview;
+		@AndroidFindBy(xpath = "//android.widget.TextView[@text='CHECKOUT: OVERVIEW']") private MobileElement CheckoutOverview;
 
-		@AndroidFindBy(xpath = "//android.widget.TextView[text()='CHECKOUT: COMPLETE!']") private MobileElement CheckoutComplete;
+		@AndroidFindBy(xpath = "//android.widget.TextView[@text='CHECKOUT: COMPLETE!']") private MobileElement CheckoutComplete;
 
 		@AndroidFindBy(xpath = "//android.widget.ScrollView[@content-desc=\"test-CHECKOUT: COMPLETE!\"]/android.view.ViewGroup/android.widget.TextView[1]\r\n"
 				+ "")
@@ -19,6 +19,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 		@AndroidFindBy(accessibility = "test-FINISH") private MobileElement Finish;
 
 		public String getPageTitleText() {
+			waitForVisibilty(CheckoutOverview);
 			return getText(CheckoutOverview);
 		}
 		

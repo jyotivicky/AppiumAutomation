@@ -21,7 +21,7 @@ import com.Pages.YourCartPage;
 import com.Report.TestReport;
 import com.aventstack.extentreports.Status;
 
-    public class ProductBuyTest extends TestBase {
+    public class ProductCheckOutTest extends TestBase {
 
 	LoginPage loginPage;
 	ProductPage productPage;
@@ -77,42 +77,61 @@ import com.aventstack.extentreports.Status;
 
 	@Test(priority = 1)
 	public void ProductAddedTest() throws Exception {
-	
 		SoftAssert sft = new SoftAssert();
 		
 		cartCheckout.pressAddToCart();
-		String str = cartCheckout.getCartButtonText();
-		System.out.println("The Product Text is: " + str);
-        
+		String AddedText = cartCheckout.getCartButtonText();
+		sft.assertEquals(AddedText, hs.get("after_added"));
+		TestReport.getTest().log(Status.INFO, hs.get("product_added_sucessfully"));
 		cartCheckout.clickCartButton();
-		
-		String str2 = cartPage.getPageTitleText();
-		System.out.println("The Cart Page Title Text is: " + str2);
-		
-//		sft.assertEquals(str2, hs.get("err_invalid_username_or_password"));
-//		TestReport.getTest().log(Status.INFO, "User not able to login with invalid username and password again");
-		
+		sft.assertAll();
+	}
+	
+	@Test(priority = 2)
+	public void validateProductOnCartPage() {
+		SoftAssert sft = new SoftAssert();
+		String YourCart = cartPage.getPageTitleText();
+		sft.assertEquals(YourCart, hs.get("your_cart"));
+		TestReport.getTest().log(Status.INFO, hs.get("product_showing_in_cart_page"));
 		cartPage.clickCheckoutButton();
+		sft.assertAll();
+	}	
 		
+	@Test(priority = 3)
+	public void validateProductOnInformationPage() {	
+		SoftAssert sft = new SoftAssert();
+		String infoPage = checkoutInfo.getPageTitle();
+		sft.assertEquals(infoPage, hs.get("information_page_title"));
+		TestReport.getTest().log(Status.INFO, hs.get("product_showing_in_info_page"));
 		checkoutInfo.enterFirstname(info.getJSONObject("CheckoutInformation").getString("firstname"));
 		checkoutInfo.enterLastname(info.getJSONObject("CheckoutInformation").getString("lastname"));
 		checkoutInfo.enterPostalcode(info.getJSONObject("CheckoutInformation").getString("postalCode"));
 		checkoutInfo.clickContinueButton();
-		 
-
-//		String str3 = overview.getPageTitleText();
-//		System.out.println("The Final Page Title is : " + str3); 
-		
-		overview.clickFinishButton();
-		
-//		String str4 = overview.getPageTitleCompletePage();
-//		System.out.println("The last Page Title is : " + str4); 
-		
-//		String str5 = overview.getThankyouMessage();
-//		System.out.println("The Thank you message is : " + str5); 
-		
 		sft.assertAll();
 	}
+	
+	@Test(priority = 4)
+	public void validateProductOnOverviewPage() throws InterruptedException {
+		SoftAssert sft = new SoftAssert();
+		String overviewPage = overview.getPageTitleText();
+		sft.assertEquals(overviewPage, hs.get("overview_page_title"));
+		TestReport.getTest().log(Status.INFO, hs.get("product_showing_in_overview_page"));
+		overview.clickFinishButton();
+		sft.assertAll();	
+	}
+	
+	@Test(priority = 5)
+	public void validateProductOrderSucess() {
+		SoftAssert sft = new SoftAssert();
+		String completePage = overview.getPageTitleCompletePage();
+		sft.assertEquals(completePage, hs.get("checkout_complete_page_title"));
+		TestReport.getTest().log(Status.INFO, hs.get("product_showing_in_checkout_complete_page"));		
+		String thankYouMessage = overview.getThankyouMessage();
+		sft.assertEquals(thankYouMessage, hs.get("thank_you_msg"));
+		TestReport.getTest().log(Status.INFO, hs.get("product_ordered_sucessfully"));
+		sft.assertAll();
+	}
+ 
 
 }
 

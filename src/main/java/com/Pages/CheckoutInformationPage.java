@@ -14,20 +14,30 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 
 	@AndroidFindBy(accessibility = "test-CONTINUE") private MobileElement Continue;
 	
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='CHECKOUT: INFORMATION']") private MobileElement CheckoutInformation;
+	
 	public void enterFirstname(String text) {
+		sendKeys(FirstName, text);
 		sendKeys(FirstName, text);
 	}
 	
 	public void enterLastname(String text) {
 		sendKeys(LastName, text);
+		sendKeys(LastName, text);
 	}
 	
 	public void enterPostalcode(String text) {
+		waitForVisibilty(PostalCode);
 		sendKeys(PostalCode, text);
 	}
 	
 	public void clickContinueButton() {
+		waitForVisibilty(Continue);
 		click(Continue);
 	}
 
+	public String getPageTitle() {
+		waitForVisibilty(CheckoutInformation);
+		return getText(CheckoutInformation);
+	}
 }

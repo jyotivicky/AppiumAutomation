@@ -8,8 +8,8 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 	@AndroidFindBy(xpath = "(//android.view.ViewGroup[@content-desc=\"test-ADD TO CART\"])[1]")private MobileElement AddToCart;
 
 	@AndroidFindBy(xpath = "//android.view.ViewGroup[@content-desc=\"test-Cart\"]/android.view.ViewGroup/android.widget.ImageView") private MobileElement CartIcon;
-
-	@AndroidFindBy(xpath = "//android.view.ViewGroup[@content-desc=\"test-REMOVE\"]") private MobileElement Remove;
+	
+	@AndroidFindBy(xpath = "//android.widget.TextView[@text='REMOVE']") static MobileElement Remove;
 
 	@AndroidFindBy(xpath = "//android.widget.TextView[text()='CHECKOUT: INFORMATION']") private MobileElement CheckoutInformation;
 	
