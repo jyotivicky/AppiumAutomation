@@ -56,7 +56,6 @@ import io.appium.java_client.touch.offset.PointOption;
 			});
 		} catch (Exception e2) {
 			return false;
-
 		}
 
 	}
@@ -75,12 +74,7 @@ import io.appium.java_client.touch.offset.PointOption;
 			}
 			
 		}
-	
-	
-	
-	
-	
-	
+
 	}
 
 

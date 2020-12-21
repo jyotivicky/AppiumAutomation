@@ -66,13 +66,11 @@ import org.testng.annotations.AfterClass;
 	@Test(enabled = false)
 	public void validateProductsOnProductPage() throws Exception {
 		SoftAssert sft = new SoftAssert();
-
 		String expectedBagTitle = productPage.getBagTitle();
 		sft.assertEquals(expectedBagTitle, hs.get("products_page_Bag_title"));
 		
 		String expectedBagPrice = productPage.getBagPrice();
 		sft.assertEquals(expectedBagPrice, hs.get("products_page_Bag_price"));
-
 		sft.assertAll();
 	}
 	
@@ -80,19 +78,16 @@ import org.testng.annotations.AfterClass;
 	public void validateProductsOnProductDetailsPage() throws Exception {
 		SoftAssert sft = new SoftAssert();
 		
-		detailsPage = productPage.pressBagTitle();
-		
+		detailsPage = productPage.pressBagTitle();		
 		String expectedBagTitle = detailsPage.getBagTitle();
 		sft.assertEquals(expectedBagTitle, hs.get("products_page_Bag_title"));
 		
 		detailsPage.scrollToBagPrice();
-		
 		String expectedBagDesc = detailsPage.getBagDescription();
 		sft.assertEquals(expectedBagDesc, hs.get("product_details_page_Bag_description"));
 		
 		String expectedBagPrice = detailsPage.getBagPrice();
 		sft.assertEquals(expectedBagPrice, hs.get("product_details_page_Bag_price"));
-		
 		productPage = detailsPage.pressBackToProductButton();
 		
 		sft.assertAll();

@@ -12,7 +12,6 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 	public static final int Implictly_Wait = 30;
 	public static final int Wait20Seconds = 20;
 	public static final int Explicitly_Wait240 = 240;
-	public static final String report = "Extent_Report/extentReport.html";
 	public static Logger log;
 	public static ExtentHtmlReporter htmlreporter;
 	public static ExtentReports extent;

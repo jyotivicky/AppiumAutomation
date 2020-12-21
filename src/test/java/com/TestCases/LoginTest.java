@@ -1,12 +1,13 @@
 package com.TestCases;
 
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 import com.BaseClass.TestBase;
+import com.Pages.CartCheckoutPage;
 import com.Pages.LoginPage;
 import com.Pages.ProductPage;
 import com.Report.TestReport;
 import com.aventstack.extentreports.Status;
-
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
@@ -18,10 +19,11 @@ import org.json.JSONTokener;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 
-    public class LoginTest extends TestBase {
+public class LoginTest extends TestBase {
 	LoginPage loginPage;
 	ProductPage productPage;
 	JSONObject loginUsers;
+	CartCheckoutPage cartCheckout;
 
 	@BeforeClass
 	public void beforeClass() throws IOException {
@@ -50,45 +52,64 @@ import org.testng.annotations.AfterClass;
 	@BeforeMethod
 	public void beforeMethod() {
 		loginPage = new LoginPage();
+		productPage = new ProductPage();
+		cartCheckout = new CartCheckoutPage();
 	}
 
 	@AfterMethod
 	public void afterMethod() {
 	}
 
-	@Test(priority = 1)
+	@Test(enabled = false)
 	public void InvalidUsernameTest() throws Exception {
 
-		TestReport.getTest().log(Status.INFO, "Enter Username");
-		
+		SoftAssert sft = new SoftAssert();
 		loginPage.enterUsername(loginUsers.getJSONObject("invalidusername").getString("username"));
 		loginPage.enterPassword(loginUsers.getJSONObject("invalidusername").getString("password"));
 		loginPage.clickLoginButton();
-
-		String ExpectedMessage = hs.get("err_invalid_username_or_password");
+		
 		String ActualMessage = loginPage.getErrorTxt();
-		Assert.assertEquals(ExpectedMessage, ActualMessage);
+		sft.assertEquals(ActualMessage, hs.get("err_invalid_username_or_password"));
+		TestReport.getTest().log(Status.INFO, "User not able to login with invalid username and password");
+		sft.assertAll();
 	}
 
 	@Test(enabled = false)
 	public void InvalidPasswordTest() {
-		loginPage.enterUsername("standard_user");
-		loginPage.enterPassword("InvalidPassword");
+		SoftAssert sft = new SoftAssert();
+
+		loginPage.enterUsername(loginUsers.getJSONObject("invalidPassword").getString("username"));
+		loginPage.enterPassword(loginUsers.getJSONObject("invalidPassword").getString("password"));
 		loginPage.clickLoginButton();
 		
-		String ExpectedMessage = "Username and password do not match any user in this service.";
 		String ActualMessage = loginPage.getErrorTxt();
-		Assert.assertEquals(ExpectedMessage, ActualMessage);
+		sft.assertEquals(ActualMessage, hs.get("err_invalid_username_or_password"));
+		TestReport.getTest().log(Status.INFO, "User not able to login with invalid username and password again");
+		sft.assertAll();
 	}
 
-	@Test(enabled = false)
-	public void ValidUsernameTest() {
-		loginPage.enterUsername("standard_user");
-		loginPage.enterPassword("secret_sauce");
+	@Test(priority = 1)
+	public void ValidUsernameTest() throws InterruptedException {
+		SoftAssert sft = new SoftAssert();
+		loginPage.enterUsername(loginUsers.getJSONObject("validUser").getString("username"));
+		loginPage.enterPassword(loginUsers.getJSONObject("validUser").getString("password"));
 		loginPage.clickLoginButton();
+		
+		
+		cartCheckout.pressAddToCart();
+		String str = cartCheckout.getCartButtonText();
+		System.out.println("The Text is: " + str);
+        
+		cartCheckout.clickLoginButton();
+		
+//		String actualPageTitle = productPage.getPageTitle();
+//		sft.assertEquals(actualPageTitle, hs.get("page_title"));
+//		TestReport.getTest().log(Status.INFO, "User able to login with valid username and password");
+		
+		
+		
+		
+		sft.assertAll();
 	}
 
 }
-
-    
-    

@@ -8,19 +8,15 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
     public class LoginPage extends TestBase {
 
 	@AndroidFindBy(accessibility = "test-Username")
-	@iOSXCUITFindBy(id = "test-Username")
 	private MobileElement userNameTextFld;
 
 	@AndroidFindBy(accessibility = "test-Password")
-	@iOSXCUITFindBy(id = "test-Password")
 	private MobileElement passwordTxtFld;
 
 	@AndroidFindBy(accessibility = "test-LOGIN")
-	@iOSXCUITFindBy(id = "test-LOGIN")
 	private MobileElement loginBtn;
 
 	@AndroidFindBy(xpath = "//android.view.ViewGroup[@content-desc=\"test-Error message\"]/android.widget.TextView")
-	@iOSXCUITFindBy(xpath = "//XCUIElementTypeOther[@name=\"test-Error message\"]/child::XCUIElementTypeStaticText")
 	private MobileElement errTxt;
 
 	public LoginPage enterUsername(String username) {
@@ -53,3 +49,7 @@ import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 		return getText(errTxt);
 	}
 }
+
+    
+    
+    

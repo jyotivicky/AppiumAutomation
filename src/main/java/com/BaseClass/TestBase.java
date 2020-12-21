@@ -15,6 +15,7 @@ import org.testng.annotations.Parameters;
 import com.utility.TestUtility;
 import com.Report.TestReport;
 import com.aventstack.extentreports.Status;
+import com.utility.GetAppiumStatus;
 import com.utility.PageUtils;
 import org.apache.commons.codec.binary.Base64;
 import org.apache.logging.log4j.LogManager;
@@ -55,6 +56,7 @@ import org.testng.annotations.BeforeSuite;
 	protected static String dateTime;
 	protected static TestUtility utility;
 	private static AppiumDriverLocalService server;
+	public static GetAppiumStatus getAppium = new GetAppiumStatus();
 
 	protected static ThreadLocal<String> platform = new ThreadLocal<String>();
 	protected static ThreadLocal<String> deviceName = new ThreadLocal<String>();
@@ -78,27 +80,6 @@ import org.testng.annotations.BeforeSuite;
 	public void setDeviceName(String deviceName2) {
 		deviceName.set(deviceName2);
 	}
-
-	public AppiumDriverLocalService getAppiumServerDefault() {
-		return AppiumDriverLocalService.buildDefaultService();
-	}
-		
-	/*
-	 * Configuration to Run the Appium Server programatically and capture the Server Logs
-	 * for debugging purpose
-	 */
-	public AppiumDriverLocalService getAppiumService() {
-				HashMap<String, String> environment = new HashMap<String, String>();
-				environment.put("JAVA_HOME", "C:\\Program Files\\Java\\jdk1.8.0_231\\bin");
-				environment.put("ANDROID_HOME", "C:\\Users\\hp\\AppData\\Local\\Android\\Sdk");
-				
-				return AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
-				.usingDriverExecutable(new File("C:\\Program Files\\nodejs\\node.exe"))
-				.withAppiumJS(new File("C:\\Users\\hp\\AppData\\Roaming\\npm\\node_modules\\appium\\build\\lib\\main.js"))
-				.usingPort(4723)
-				.withArgument(GeneralServerFlag.SESSION_OVERRIDE)
-			    .withLogFile(new File("ServerLogs/Server.log")));
-	}
 	
 	/*
 	 * Here we first check whether Appium start first, If Appium is not running then it 
@@ -108,9 +89,8 @@ import org.testng.annotations.BeforeSuite;
 	@BeforeSuite
 	public void startAppiumServer() throws Exception, Exception {
 		utility = new TestUtility();
-		server = getAppiumServerDefault();
-		
-		if(!checkIfAppiumServerIsRunnning(4723)) {
+		server = getAppium.getAppiumServerDefault();
+		if(!getAppium.checkIfAppiumServerIsRunnning(4723)) {
 			server.start();
 			server.clearOutPutStreams();
 			utility.log().info("Appium Server Started Sucessfully");
@@ -124,30 +104,10 @@ import org.testng.annotations.BeforeSuite;
 			}
 			server.start();
 //			server.clearOutPutStreams();
-			utility.log().info("Appium Server Starteded Sucessfully");
+			utility.log().info("Appium Server Started Sucessfully");
 		}	
 	}
-	
-	/*
-	 * To Check whether Appium Is Running Or Not, it will return True if Appium is 
-	 * already warning or False if Appium is not running
-	 */
-	public boolean checkIfAppiumServerIsRunnning(int port) throws Exception {
-	    boolean isAppiumServerRunning = false;
-	    ServerSocket socket;
-	    try {
-	        socket = new ServerSocket(port);
-	        socket.close();
-	    } catch (IOException e) {
-	    	System.out.println("1");
-	        isAppiumServerRunning = true;
-	    } finally {
-	        socket = null;
-	    }
-	    return isAppiumServerRunning;
-	}
-	
-	
+		
 	/*
 	 * Here we are Stopping te Appium Server after all test case got executed
 	 */
@@ -294,6 +254,11 @@ import org.testng.annotations.BeforeSuite;
 		waitForVisibilty(e);
 		e.sendKeys(text);
 	}
+	
+//	public String getElementText(MobileElement e, String attribute) {
+//		waitForVisibilty(e);
+//		return e.get
+//	}
 
 	public String getAttribute(MobileElement e, String attribute) {
 		waitForVisibilty(e);
