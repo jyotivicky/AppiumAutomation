@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">5 methods,   5 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +102,27 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.TestCases.ProductCheckOutTest" hash-for-method="ProductAddedTest">ProductAddedTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.TestCases.ProductCheckOutTest" hash-for-method="validateAddToCart">validateAddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.TestCases.ProductCheckOutTest" hash-for-method="validateProductOnCartPage">validateProductOnCartPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.TestCases.ProductCheckOutTest" hash-for-method="validateProductOnInformationPage">validateProductOnInformationPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.TestCases.ProductCheckOutTest" hash-for-method="validateProductOnOverviewPage">validateProductOnOverviewPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.TestCases.ProductCheckOutTest" hash-for-method="validateProductOrderSucess">validateProductOrderSucess</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -125,9 +145,37 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ProductAddedTest">
-                  </a> <!-- ProductAddedTest -->
-                  <span class="method-name">ProductAddedTest</span>
+                  <a name="validateAddToCart">
+                  </a> <!-- validateAddToCart -->
+                  <span class="method-name">validateAddToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateProductOnCartPage">
+                  </a> <!-- validateProductOnCartPage -->
+                  <span class="method-name">validateProductOnCartPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateProductOnInformationPage">
+                  </a> <!-- validateProductOnInformationPage -->
+                  <span class="method-name">validateProductOnInformationPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateProductOnOverviewPage">
+                  </a> <!-- validateProductOnOverviewPage -->
+                  <span class="method-name">validateProductOnOverviewPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateProductOrderSucess">
+                  </a> <!-- validateProductOrderSucess -->
+                  <span class="method-name">validateProductOrderSucess</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -192,16 +240,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ProductAddedTest')
+data.setCell(0, 1, 'validateAddToCart')
 data.setCell(0, 2, 'com.TestCases.ProductCheckOutTest')
-data.setCell(0, 3, 35184);
+data.setCell(0, 3, 7326);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validateProductOnOverviewPage')
+data.setCell(1, 2, 'com.TestCases.ProductCheckOutTest')
+data.setCell(1, 3, 6555);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'validateProductOnInformationPage')
+data.setCell(2, 2, 'com.TestCases.ProductCheckOutTest')
+data.setCell(2, 3, 6127);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'validateProductOnCartPage')
+data.setCell(3, 2, 'com.TestCases.ProductCheckOutTest')
+data.setCell(3, 3, 941);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'validateProductOrderSucess')
+data.setCell(4, 2, 'com.TestCases.ProductCheckOutTest')
+data.setCell(4, 3, 885);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 35 seconds</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -234,43 +298,83 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">DriverInitializataion(emulator-5554, true, Android, 9.0, Pixel_2)</span>
-                <span class="method-start">3588 ms</span>
+                <span class="method-start">3515 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">30460 ms</span>
+                <span class="method-start">27229 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">startVideoRecording</span>
-                <span class="method-start">36911 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">38689 ms</span>
+                <span class="method-start">43657 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">ProductAddedTest</span>
-                <span class="method-start">45494 ms</span>
+                <span class="method-name">validateAddToCart</span>
+                <span class="method-start">45869 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">80682 ms</span>
+                <span class="method-name">stopVideoRecording([TestResult name=validateAddToCart status=SUCCESS method=ProductCheckOutTest.validateAddToCart()[pri...)</span>
+                <span class="method-start">53201 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startVideoRecording</span>
+                <span class="method-start">56040 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateProductOnCartPage</span>
+                <span class="method-start">57424 ms</span>
+              </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">stopVideoRecording([TestResult name=ProductAddedTest status=SUCCESS method=ProductCheckOutTest.ProductAddedTest()[pri:1...)</span>
-                <span class="method-start">83747 ms</span>
+                <span class="method-name">stopVideoRecording([TestResult name=validateProductOnCartPage status=SUCCESS method=ProductCheckOutTest.validateProduct...)</span>
+                <span class="method-start">58367 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startVideoRecording</span>
+                <span class="method-start">59784 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateProductOnInformationPage</span>
+                <span class="method-start">61093 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">stopVideoRecording([TestResult name=validateProductOnInformationPage status=SUCCESS method=ProductCheckOutTest.validate...)</span>
+                <span class="method-start">67222 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startVideoRecording</span>
+                <span class="method-start">68721 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateProductOnOverviewPage</span>
+                <span class="method-start">70292 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">stopVideoRecording([TestResult name=validateProductOnOverviewPage status=SUCCESS method=ProductCheckOutTest.validatePro...)</span>
+                <span class="method-start">76850 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startVideoRecording</span>
+                <span class="method-start">78977 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">validateProductOrderSucess</span>
+                <span class="method-start">80134 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">stopVideoRecording([TestResult name=validateProductOrderSucess status=SUCCESS method=ProductCheckOutTest.validateProduc...)</span>
+                <span class="method-start">81022 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">87765 ms</span>
+                <span class="method-start">81868 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">87771 ms</span>
+                <span class="method-start">84396 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">stopAppiumServer</span>
-                <span class="method-start">92873 ms</span>
+                <span class="method-start">89505 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

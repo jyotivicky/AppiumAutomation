@@ -50,14 +50,6 @@ import com.aventstack.extentreports.Status;
 		}
 		closeApp();
 		lunchApp();
-	}
-
-	@AfterClass
-	public void afterClass() {
-	}
-
-	@BeforeMethod
-	public void beforeMethod() {
 		loginPage = new LoginPage();
 		productPage = new ProductPage();
 		cartCheckout = new CartCheckoutPage();
@@ -66,19 +58,18 @@ import com.aventstack.extentreports.Status;
 		overview = new CheckoutOverviewPage();
 		loginPage = new LoginPage();
 		productPage = loginPage.userLogin(info.getJSONObject("validUser").getString("username"), 
-				info.getJSONObject("validUser").getString("password"));	
+				info.getJSONObject("validUser").getString("password"));
 	}
 
-	@AfterMethod
-	public void afterMethod() {
+	@AfterClass
+	public void afterClass() {
 		settingPage = productPage.pressSettingsBtn();
 		loginPage = settingPage.pressLogOutBtn();
 	}
 
 	@Test(priority = 1)
-	public void ProductAddedTest() throws Exception {
+	public void validateAddToCart() throws Exception {
 		SoftAssert sft = new SoftAssert();
-		
 		cartCheckout.pressAddToCart();
 		String AddedText = cartCheckout.getCartButtonText();
 		sft.assertEquals(AddedText, hs.get("after_added"));
@@ -87,7 +78,7 @@ import com.aventstack.extentreports.Status;
 		sft.assertAll();
 	}
 	
-	@Test(priority = 2)
+	@Test(dependsOnMethods = {"validateAddToCart"})
 	public void validateProductOnCartPage() {
 		SoftAssert sft = new SoftAssert();
 		String YourCart = cartPage.getPageTitleText();
@@ -97,7 +88,7 @@ import com.aventstack.extentreports.Status;
 		sft.assertAll();
 	}	
 		
-	@Test(priority = 3)
+	@Test(dependsOnMethods = {"validateProductOnCartPage"})
 	public void validateProductOnInformationPage() {	
 		SoftAssert sft = new SoftAssert();
 		String infoPage = checkoutInfo.getPageTitle();
@@ -110,7 +101,7 @@ import com.aventstack.extentreports.Status;
 		sft.assertAll();
 	}
 	
-	@Test(priority = 4)
+	@Test(dependsOnMethods = {"validateProductOnInformationPage"})
 	public void validateProductOnOverviewPage() throws InterruptedException {
 		SoftAssert sft = new SoftAssert();
 		String overviewPage = overview.getPageTitleText();
@@ -120,7 +111,7 @@ import com.aventstack.extentreports.Status;
 		sft.assertAll();	
 	}
 	
-	@Test(priority = 5)
+	@Test(dependsOnMethods = {"validateProductOnOverviewPage"})
 	public void validateProductOrderSucess() {
 		SoftAssert sft = new SoftAssert();
 		String completePage = overview.getPageTitleCompletePage();

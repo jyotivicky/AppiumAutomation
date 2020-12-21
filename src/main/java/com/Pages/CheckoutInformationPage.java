@@ -17,12 +17,12 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text='CHECKOUT: INFORMATION']") private MobileElement CheckoutInformation;
 	
 	public void enterFirstname(String text) {
-		sendKeys(FirstName, text);
+		waitForVisibilty(FirstName);
 		sendKeys(FirstName, text);
 	}
 	
 	public void enterLastname(String text) {
-		sendKeys(LastName, text);
+		waitForVisibilty(LastName);
 		sendKeys(LastName, text);
 	}
 	
@@ -40,4 +40,4 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 		waitForVisibilty(CheckoutInformation);
 		return getText(CheckoutInformation);
 	}
-}
+  }

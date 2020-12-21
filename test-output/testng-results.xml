@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="86978" started-at="2020-12-21T10:36:35Z" finished-at="2020-12-21T10:38:02Z">
+  <suite name="Suite" duration-ms="83950" started-at="2020-12-21T11:52:39Z" finished-at="2020-12-21T11:54:03Z">
     <groups>
     </groups>
-    <test name="Mobile Automation Test on Pixel 2" duration-ms="86978" started-at="2020-12-21T10:36:35Z" finished-at="2020-12-21T10:38:02Z">
+    <test name="Mobile Automation Test on Pixel 2" duration-ms="83950" started-at="2020-12-21T11:52:39Z" finished-at="2020-12-21T11:54:03Z">
       <class name="com.TestCases.ProductCheckOutTest">
-        <test-method status="PASS" signature="startAppiumServer()[pri:0, instance:com.TestCases.ProductCheckOutTest@6ec8211c]" name="startAppiumServer" is-config="true" duration-ms="3583" started-at="2020-12-21T16:06:31Z" finished-at="2020-12-21T16:06:35Z">
+        <test-method status="PASS" signature="startAppiumServer()[pri:0, instance:com.TestCases.ProductCheckOutTest@25bbf683]" name="startAppiumServer" is-config="true" duration-ms="3512" started-at="2020-12-21T17:22:35Z" finished-at="2020-12-21T17:22:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startAppiumServer -->
-        <test-method status="PASS" signature="DriverInitializataion(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.TestCases.ProductCheckOutTest@6ec8211c]" name="DriverInitializataion" is-config="true" duration-ms="26853" started-at="2020-12-21T16:06:35Z" finished-at="2020-12-21T16:07:02Z">
+        <test-method status="PASS" signature="DriverInitializataion(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.TestCases.ProductCheckOutTest@25bbf683]" name="DriverInitializataion" is-config="true" duration-ms="23680" started-at="2020-12-21T17:22:39Z" finished-at="2020-12-21T17:23:02Z">
           <params>
             <param index="0">
               <value>
@@ -42,46 +42,114 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DriverInitializataion -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.TestCases.ProductCheckOutTest@6ec8211c]" name="beforeClass" is-config="true" duration-ms="6442" started-at="2020-12-21T16:07:02Z" finished-at="2020-12-21T16:07:08Z">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.TestCases.ProductCheckOutTest@25bbf683]" name="beforeClass" is-config="true" duration-ms="16418" started-at="2020-12-21T17:23:02Z" finished-at="2020-12-21T17:23:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="startVideoRecording()[pri:0, instance:com.TestCases.ProductCheckOutTest@6ec8211c]" name="startVideoRecording" is-config="true" duration-ms="1778" started-at="2020-12-21T16:07:08Z" finished-at="2020-12-21T16:07:10Z">
+        <test-method status="PASS" signature="startVideoRecording()[pri:0, instance:com.TestCases.ProductCheckOutTest@25bbf683]" name="startVideoRecording" is-config="true" duration-ms="2212" started-at="2020-12-21T17:23:19Z" finished-at="2020-12-21T17:23:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startVideoRecording -->
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.TestCases.ProductCheckOutTest@6ec8211c]" name="beforeMethod" is-config="true" duration-ms="6805" started-at="2020-12-21T16:07:10Z" finished-at="2020-12-21T16:07:17Z">
+        <test-method status="PASS" signature="validateAddToCart()[pri:1, instance:com.TestCases.ProductCheckOutTest@25bbf683]" name="validateAddToCart" duration-ms="7326" started-at="2020-12-21T17:23:21Z" finished-at="2020-12-21T17:23:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="ProductAddedTest()[pri:1, instance:com.TestCases.ProductCheckOutTest@6ec8211c]" name="ProductAddedTest" duration-ms="35184" started-at="2020-12-21T16:07:17Z" finished-at="2020-12-21T16:07:52Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ProductAddedTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.TestCases.ProductCheckOutTest@6ec8211c]" name="afterMethod" is-config="true" duration-ms="3065" started-at="2020-12-21T16:07:52Z" finished-at="2020-12-21T16:07:55Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-        <test-method status="PASS" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.ProductCheckOutTest@6ec8211c]" name="stopVideoRecording" is-config="true" duration-ms="4018" started-at="2020-12-21T16:07:55Z" finished-at="2020-12-21T16:07:59Z">
+        </test-method> <!-- validateAddToCart -->
+        <test-method status="PASS" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.ProductCheckOutTest@25bbf683]" name="stopVideoRecording" is-config="true" duration-ms="2831" started-at="2020-12-21T17:23:28Z" finished-at="2020-12-21T17:23:31Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ProductAddedTest status=SUCCESS method=ProductCheckOutTest.ProductAddedTest()[pri:1, instance:com.TestCases.ProductCheckOutTest@6ec8211c] output={null}]]]>
+                <![CDATA[[TestResult name=validateAddToCart status=SUCCESS method=ProductCheckOutTest.validateAddToCart()[pri:1, instance:com.TestCases.ProductCheckOutTest@25bbf683] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopVideoRecording -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.TestCases.ProductCheckOutTest@6ec8211c]" name="afterClass" is-config="true" duration-ms="1" started-at="2020-12-21T16:07:59Z" finished-at="2020-12-21T16:07:59Z">
+        <test-method status="PASS" signature="startVideoRecording()[pri:0, instance:com.TestCases.ProductCheckOutTest@25bbf683]" name="startVideoRecording" is-config="true" duration-ms="1384" started-at="2020-12-21T17:23:31Z" finished-at="2020-12-21T17:23:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startVideoRecording -->
+        <test-method status="PASS" signature="validateProductOnCartPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@25bbf683]" name="validateProductOnCartPage" duration-ms="941" started-at="2020-12-21T17:23:33Z" depends-on-methods="com.TestCases.ProductCheckOutTest.validateAddToCart" finished-at="2020-12-21T17:23:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductOnCartPage -->
+        <test-method status="PASS" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.ProductCheckOutTest@25bbf683]" name="stopVideoRecording" is-config="true" duration-ms="1416" started-at="2020-12-21T17:23:34Z" finished-at="2020-12-21T17:23:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateProductOnCartPage status=SUCCESS method=ProductCheckOutTest.validateProductOnCartPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@25bbf683] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopVideoRecording -->
+        <test-method status="PASS" signature="startVideoRecording()[pri:0, instance:com.TestCases.ProductCheckOutTest@25bbf683]" name="startVideoRecording" is-config="true" duration-ms="1309" started-at="2020-12-21T17:23:35Z" finished-at="2020-12-21T17:23:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startVideoRecording -->
+        <test-method status="PASS" signature="validateProductOnInformationPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@25bbf683]" name="validateProductOnInformationPage" duration-ms="6127" started-at="2020-12-21T17:23:36Z" depends-on-methods="com.TestCases.ProductCheckOutTest.validateProductOnCartPage" finished-at="2020-12-21T17:23:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductOnInformationPage -->
+        <test-method status="PASS" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.ProductCheckOutTest@25bbf683]" name="stopVideoRecording" is-config="true" duration-ms="1498" started-at="2020-12-21T17:23:42Z" finished-at="2020-12-21T17:23:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateProductOnInformationPage status=SUCCESS method=ProductCheckOutTest.validateProductOnInformationPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@25bbf683] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopVideoRecording -->
+        <test-method status="PASS" signature="startVideoRecording()[pri:0, instance:com.TestCases.ProductCheckOutTest@25bbf683]" name="startVideoRecording" is-config="true" duration-ms="1571" started-at="2020-12-21T17:23:44Z" finished-at="2020-12-21T17:23:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startVideoRecording -->
+        <test-method status="PASS" signature="validateProductOnOverviewPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@25bbf683]" name="validateProductOnOverviewPage" duration-ms="6555" started-at="2020-12-21T17:23:46Z" depends-on-methods="com.TestCases.ProductCheckOutTest.validateProductOnInformationPage" finished-at="2020-12-21T17:23:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductOnOverviewPage -->
+        <test-method status="PASS" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.ProductCheckOutTest@25bbf683]" name="stopVideoRecording" is-config="true" duration-ms="2125" started-at="2020-12-21T17:23:52Z" finished-at="2020-12-21T17:23:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateProductOnOverviewPage status=SUCCESS method=ProductCheckOutTest.validateProductOnOverviewPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@25bbf683] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopVideoRecording -->
+        <test-method status="PASS" signature="startVideoRecording()[pri:0, instance:com.TestCases.ProductCheckOutTest@25bbf683]" name="startVideoRecording" is-config="true" duration-ms="1157" started-at="2020-12-21T17:23:54Z" finished-at="2020-12-21T17:23:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startVideoRecording -->
+        <test-method status="PASS" signature="validateProductOrderSucess()[pri:0, instance:com.TestCases.ProductCheckOutTest@25bbf683]" name="validateProductOrderSucess" duration-ms="885" started-at="2020-12-21T17:23:55Z" depends-on-methods="com.TestCases.ProductCheckOutTest.validateProductOnOverviewPage" finished-at="2020-12-21T17:23:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductOrderSucess -->
+        <test-method status="PASS" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.ProductCheckOutTest@25bbf683]" name="stopVideoRecording" is-config="true" duration-ms="846" started-at="2020-12-21T17:23:56Z" finished-at="2020-12-21T17:23:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validateProductOrderSucess status=SUCCESS method=ProductCheckOutTest.validateProductOrderSucess()[pri:0, instance:com.TestCases.ProductCheckOutTest@25bbf683] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopVideoRecording -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.TestCases.ProductCheckOutTest@25bbf683]" name="afterClass" is-config="true" duration-ms="2528" started-at="2020-12-21T17:23:57Z" finished-at="2020-12-21T17:24:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.TestCases.ProductCheckOutTest@6ec8211c]" name="afterTest" is-config="true" duration-ms="2791" started-at="2020-12-21T16:07:59Z" finished-at="2020-12-21T16:08:02Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.TestCases.ProductCheckOutTest@25bbf683]" name="afterTest" is-config="true" duration-ms="3066" started-at="2020-12-21T17:24:00Z" finished-at="2020-12-21T17:24:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="stopAppiumServer()[pri:0, instance:com.TestCases.ProductCheckOutTest@6ec8211c]" name="stopAppiumServer" is-config="true" duration-ms="2" started-at="2020-12-21T16:08:04Z" finished-at="2020-12-21T16:08:04Z">
+        <test-method status="PASS" signature="stopAppiumServer()[pri:0, instance:com.TestCases.ProductCheckOutTest@25bbf683]" name="stopAppiumServer" is-config="true" duration-ms="4" started-at="2020-12-21T17:24:05Z" finished-at="2020-12-21T17:24:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopAppiumServer -->
