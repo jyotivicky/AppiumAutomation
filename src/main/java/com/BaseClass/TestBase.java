@@ -246,11 +246,6 @@ import org.testng.annotations.BeforeSuite;
 		e.sendKeys(text);
 	}
 	
-//	public String getElementText(MobileElement e, String attribute) {
-//		waitForVisibilty(e);
-//		return e.get
-//	}
-
 	public String getAttribute(MobileElement e, String attribute) {
 		waitForVisibilty(e);
 		return e.getAttribute(attribute);
