@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -54,12 +54,12 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>0 groups</span>
+                    <span>1 group</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,41 +91,31 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">3 methods, 3 failed,   </span>
                   </li>
                   <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Suite">
+                    <div class="method-list-content failed suite-Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.TestCases.ProductCheckOutTest" hash-for-method="validateAddToCart">validateAddToCart</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.TestCases.LoginTest" hash-for-method="invalidPasswordTest">invalidPasswordTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.TestCases.ProductCheckOutTest" hash-for-method="validateProductOnCartPage">validateProductOnCartPage</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.TestCases.LoginTest" hash-for-method="invalidUsernameTest">invalidUsernameTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.TestCases.ProductCheckOutTest" hash-for-method="validateProductOnInformationPage">validateProductOnInformationPage</a> <!-- method navigator-link -->
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.TestCases.LoginTest" hash-for-method="validUsernameTest">validUsernameTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.TestCases.ProductCheckOutTest" hash-for-method="validateProductOnOverviewPage">validateProductOnOverviewPage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.TestCases.ProductCheckOutTest" hash-for-method="validateProductOrderSucess">validateProductOrderSucess</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite -->
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -137,49 +127,50 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.TestCases.ProductCheckOutTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.TestCases.LoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validateAddToCart">
-                  </a> <!-- validateAddToCart -->
-                  <span class="method-name">validateAddToCart</span>
+                  <a name="invalidPasswordTest">
+                  </a> <!-- invalidPasswordTest -->
+                  <span class="method-name">invalidPasswordTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [null] but found [Username and password do not match any user in this service.]
+	at com.TestCases.LoginTest.invalidPasswordTest(LoginTest.java:69)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="validateProductOnCartPage">
-                  </a> <!-- validateProductOnCartPage -->
-                  <span class="method-name">validateProductOnCartPage</span>
+                  <a name="invalidUsernameTest">
+                  </a> <!-- invalidUsernameTest -->
+                  <span class="method-name">invalidUsernameTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [null] but found [Username and password do not match any user in this service.]
+	at com.TestCases.LoginTest.invalidUsernameTest(LoginTest.java:57)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="validateProductOnInformationPage">
-                  </a> <!-- validateProductOnInformationPage -->
-                  <span class="method-name">validateProductOnInformationPage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateProductOnOverviewPage">
-                  </a> <!-- validateProductOnOverviewPage -->
-                  <span class="method-name">validateProductOnOverviewPage</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="validateProductOrderSucess">
-                  </a> <!-- validateProductOrderSucess -->
-                  <span class="method-name">validateProductOrderSucess</span>
+                  <a name="validUsernameTest">
+                  </a> <!-- validUsernameTest -->
+                  <span class="method-name">validUsernameTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
+	expected [null] but found [PRODUCTS]
+	at com.TestCases.LoginTest.validUsernameTest(LoginTest.java:81)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -200,9 +191,33 @@
     &lt;parameter name=&quot;udid&quot; value=&quot;emulator-5554&quot;/&gt;
     &lt;parameter name=&quot;deviceName&quot; value=&quot;Pixel_2&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.TestCases.ProductCheckOutTest&quot;/&gt;
+      &lt;class name=&quot;com.TestCases.LoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Mobile Automation Test on Pixel 2 --&gt;
+  &lt;test name=&quot;Mobile Automation Test on Pixel 2(failed)&quot;&gt;
+    &lt;parameter name=&quot;emulator&quot; value=&quot;true&quot;/&gt;
+    &lt;parameter name=&quot;platformVersion&quot; value=&quot;9.0&quot;/&gt;
+    &lt;parameter name=&quot;platformName&quot; value=&quot;Android&quot;/&gt;
+    &lt;parameter name=&quot;udid&quot; value=&quot;emulator-5554&quot;/&gt;
+    &lt;parameter name=&quot;deviceName&quot; value=&quot;Pixel_2&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.TestCases.LoginTest&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;stopVideoRecording&quot;/&gt;
+          &lt;include name=&quot;DriverInitializataion&quot;/&gt;
+          &lt;include name=&quot;startAppiumServer&quot;/&gt;
+          &lt;include name=&quot;startVideoRecording&quot;/&gt;
+          &lt;include name=&quot;validUsernameTest&quot;/&gt;
+          &lt;include name=&quot;stopAppiumServer&quot;/&gt;
+          &lt;include name=&quot;jsonDataInitialaization&quot;/&gt;
+          &lt;include name=&quot;afterTest&quot;/&gt;
+          &lt;include name=&quot;Initialaization&quot;/&gt;
+          &lt;include name=&quot;invalidPasswordTest&quot;/&gt;
+          &lt;include name=&quot;invalidUsernameTest&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- com.TestCases.LoginTest --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Mobile Automation Test on Pixel 2(failed) --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -216,6 +231,9 @@
               <li>
                 <span class="test-name">Mobile Automation Test on Pixel 2 (1 class)</span>
               </li>
+              <li>
+                <span class="test-name">Mobile Automation Test on Pixel 2(failed) (1 class)</span>
+              </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -224,6 +242,22 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">somke</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidPasswordTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidUsernameTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">validUsernameTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -240,32 +274,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validateAddToCart')
-data.setCell(0, 2, 'com.TestCases.ProductCheckOutTest')
-data.setCell(0, 3, 7326);
+data.setCell(0, 1, 'invalidUsernameTest')
+data.setCell(0, 2, 'com.TestCases.LoginTest')
+data.setCell(0, 3, 8862);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'validateProductOnOverviewPage')
-data.setCell(1, 2, 'com.TestCases.ProductCheckOutTest')
-data.setCell(1, 3, 6555);
+data.setCell(1, 1, 'validUsernameTest')
+data.setCell(1, 2, 'com.TestCases.LoginTest')
+data.setCell(1, 3, 8290);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'validateProductOnInformationPage')
-data.setCell(2, 2, 'com.TestCases.ProductCheckOutTest')
-data.setCell(2, 3, 6127);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'validateProductOnCartPage')
-data.setCell(3, 2, 'com.TestCases.ProductCheckOutTest')
-data.setCell(3, 3, 941);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'validateProductOrderSucess')
-data.setCell(4, 2, 'com.TestCases.ProductCheckOutTest')
-data.setCell(4, 3, 885);
+data.setCell(2, 1, 'invalidPasswordTest')
+data.setCell(2, 2, 'com.TestCases.LoginTest')
+data.setCell(2, 3, 5122);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 21 seconds</span>
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -276,6 +302,27 @@ return data;
             <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">invalidPasswordTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Case Got Failed Screenshot Taken</span>
+                <span class="reporter-method-output"><a href='D:\ProjectSelenium\Appium_Framework\Screenshots\Android_Pixel_2\2020-12-22-10-00-11\LoginTest\invalidPasswordTest.png'> <img src='D:\ProjectSelenium\Appium_Framework\Screenshots\Android_Pixel_2\2020-12-22-10-00-11\LoginTest\invalidPasswordTest.png' height='400' width='400'/> </a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">validUsernameTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Case Got Failed Screenshot Taken</span>
+                <span class="reporter-method-output"><a href='D:\ProjectSelenium\Appium_Framework\Screenshots\Android_Pixel_2\2020-12-22-10-00-11\LoginTest\validUsernameTest.png'> <img src='D:\ProjectSelenium\Appium_Framework\Screenshots\Android_Pixel_2\2020-12-22-10-00-11\LoginTest\validUsernameTest.png' height='400' width='400'/> </a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">invalidUsernameTest</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test Case Got Failed Screenshot Taken</span>
+                <span class="reporter-method-output"><a href='D:\ProjectSelenium\Appium_Framework\Screenshots\Android_Pixel_2\2020-12-22-10-00-11\LoginTest\invalidUsernameTest.png'> <img src='D:\ProjectSelenium\Appium_Framework\Screenshots\Android_Pixel_2\2020-12-22-10-00-11\LoginTest\invalidUsernameTest.png' height='400' width='400'/> </a></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
@@ -291,90 +338,80 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.TestCases.ProductCheckOutTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.TestCases.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">startAppiumServer</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">DriverInitializataion(emulator-5554, true, Android, 9.0, Pixel_2)</span>
-                <span class="method-start">3515 ms</span>
+                <span class="method-start">3068 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
-                <span class="method-name">beforeClass</span>
-                <span class="method-start">27229 ms</span>
+                <span class="method-name">jsonDataInitialaization</span>
+                <span class="method-start">23956 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">startVideoRecording</span>
-                <span class="method-start">43657 ms</span>
+                <span class="method-start">29627 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Initialaization</span>
+                <span class="method-start">31177 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validateAddToCart</span>
-                <span class="method-start">45869 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">invalidUsernameTest</span>
+                <span class="method-start">31638 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">stopVideoRecording([TestResult name=validateAddToCart status=SUCCESS method=ProductCheckOutTest.validateAddToCart()[pri...)</span>
-                <span class="method-start">53201 ms</span>
+                <span class="method-name">stopVideoRecording([TestResult name=invalidUsernameTest status=FAILURE method=LoginTest.invalidUsernameTest()[pri:1, in...)</span>
+                <span class="method-start">41403 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startVideoRecording</span>
-                <span class="method-start">56040 ms</span>
+                <span class="method-start">42434 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Initialaization</span>
+                <span class="method-start">43414 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validateProductOnCartPage</span>
-                <span class="method-start">57424 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">invalidPasswordTest</span>
+                <span class="method-start">43421 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">stopVideoRecording([TestResult name=validateProductOnCartPage status=SUCCESS method=ProductCheckOutTest.validateProduct...)</span>
-                <span class="method-start">58367 ms</span>
+                <span class="method-name">stopVideoRecording([TestResult name=invalidPasswordTest status=FAILURE method=LoginTest.invalidPasswordTest()[pri:2, in...)</span>
+                <span class="method-start">49303 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">startVideoRecording</span>
-                <span class="method-start">59784 ms</span>
+                <span class="method-start">50376 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validateProductOnInformationPage</span>
-                <span class="method-start">61093 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">stopVideoRecording([TestResult name=validateProductOnInformationPage status=SUCCESS method=ProductCheckOutTest.validate...)</span>
-                <span class="method-start">67222 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
-                <span class="method-name">startVideoRecording</span>
-                <span class="method-start">68721 ms</span>
+                <span class="method-name">Initialaization</span>
+                <span class="method-start">51571 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">validateProductOnOverviewPage</span>
-                <span class="method-start">70292 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validUsernameTest</span>
+                <span class="method-start">51574 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">stopVideoRecording([TestResult name=validateProductOnOverviewPage status=SUCCESS method=ProductCheckOutTest.validatePro...)</span>
-                <span class="method-start">76850 ms</span>
+                <span class="method-name">stopVideoRecording([TestResult name=validUsernameTest status=FAILURE method=LoginTest.validUsernameTest()[pri:3, instan...)</span>
+                <span class="method-start">61938 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">startVideoRecording</span>
-                <span class="method-start">78977 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">validateProductOrderSucess</span>
-                <span class="method-start">80134 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">stopVideoRecording([TestResult name=validateProductOrderSucess status=SUCCESS method=ProductCheckOutTest.validateProduc...)</span>
-                <span class="method-start">81022 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-class after">
-                <span class="method-name">afterClass</span>
-                <span class="method-start">81868 ms</span>
-              </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">84396 ms</span>
+                <span class="method-start">64287 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">stopAppiumServer</span>
-                <span class="method-start">89505 ms</span>
+                <span class="method-start">69331 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

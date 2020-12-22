@@ -14,6 +14,8 @@ import javax.xml.parsers.DocumentBuilderFactory;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.json.JSONObject;
+import org.json.JSONTokener;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -21,7 +23,7 @@ import org.w3c.dom.NodeList;
 import com.BaseClass.TestBase;
 
     public class TestUtility {
-
+    	public static JSONObject loginUsers;
     /*
      * To get the Validation and Test Data messages from XML files for the validation 
      * messages and Test Data, which we can get based the String	
@@ -98,8 +100,38 @@ import com.BaseClass.TestBase;
 	public Logger log() {
 		return LogManager.getLogger(Thread.currentThread().getStackTrace()[2].getClassName());
 	}
+	
+	/*
+	 * To read the json data for login 
+	 */
+//	public void readJsonData() throws IOException {
+//		InputStream datais = null;
+//		try {
+//			String dataFileName = "TestData/TestData.json";
+//			datais = getClass().getClassLoader().getResourceAsStream(dataFileName);
+//			JSONTokener tokener = new JSONTokener(datais);
+//			loginUsers = new JSONObject(tokener);
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//			throw e;
+//		} finally {
+//			if (datais != null) {
+//				datais.close();
+//			}
+//		}
+//		closeApp();
+//		lunchApp();
+//	}
 }
 
+    
+    
+    
+    
+    
+    
+    
+    
     
     
     

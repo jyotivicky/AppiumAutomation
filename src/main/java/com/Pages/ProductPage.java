@@ -1,22 +1,17 @@
 package com.Pages;
 
-import com.BaseClass.TestBase;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
-import io.appium.java_client.pagefactory.iOSXCUITFindBy;
 
-public class ProductPage extends MenuPage {
+    public class ProductPage extends MenuPage {
 
-	@AndroidFindBy(xpath = "(//android.widget.TextView[@content-desc=\"test-Item title\"])[1]")
-	private MobileElement bagTitle;
+	@AndroidFindBy(xpath = "(//android.widget.TextView[@content-desc=\"test-Item title\"])[1]") private MobileElement bagTitle;
 	
 	@AndroidFindBy(xpath = "//android.widget.TextView[@text='PRODUCTS']") private MobileElement PageTitle;
 
-	@AndroidFindBy(xpath = "(//android.widget.TextView[@content-desc=\"test-Price\"])[1]")
-	private MobileElement bagPrice;
+	@AndroidFindBy(xpath = "(//android.widget.TextView[@content-desc=\"test-Price\"])[1]") private MobileElement bagPrice;
 	
-	@AndroidFindBy(xpath = "(//android.view.ViewGroup[@content-desc=\"test-ADD TO CART\"])[1]")
-	private MobileElement AddToCart;
+	@AndroidFindBy(xpath = "(//android.view.ViewGroup[@content-desc=\"test-ADD TO CART\"])[1]") private MobileElement AddToCart;
 	
 	@AndroidFindBy(accessibility =  "test-REMOVE") private MobileElement Remove;
 	

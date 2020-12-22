@@ -7,17 +7,15 @@ import com.Pages.LoginPage;
 import com.Pages.ProductDetailsPage;
 import com.Pages.ProductPage;
 import com.Pages.SettingPage;
-
+import com.Report.TestReport;
+import com.aventstack.extentreports.Status;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import java.io.StringWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import org.json.JSONObject;
 import org.json.JSONTokener;
-import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 
     public class ProductInformationTest extends TestBase {
 	LoginPage loginPage;
@@ -46,14 +44,11 @@ import org.testng.annotations.AfterClass;
 		lunchApp();
 	}
 
-	@AfterClass
-	public void afterClass() {
-	}
-
 	@BeforeMethod
 	public void beforeMethod() {
 		loginPage = new LoginPage();
-		productPage = loginPage.userLogin(loginUsers.getJSONObject("validUser").getString("username"), 
+		productPage = new ProductPage();
+		loginPage.userLogin(loginUsers.getJSONObject("validUser").getString("username"), 
 				loginUsers.getJSONObject("validUser").getString("password"));	
 	}
 
@@ -63,33 +58,33 @@ import org.testng.annotations.AfterClass;
 		loginPage = settingPage.pressLogOutBtn();
 	}
 
-	@Test(enabled = false)
+	@Test(priority = 1,groups = "regression")
 	public void validateProductsOnProductPage() throws Exception {
 		SoftAssert sft = new SoftAssert();
 		String expectedBagTitle = productPage.getBagTitle();
-		sft.assertEquals(expectedBagTitle, hs.get("products_page_Bag_title"));
-		
+		sft.assertEquals(expectedBagTitle, hs.get("products_page_Bag_title"));	
+		TestReport.getTest().log(Status.INFO, hs.get("products_page_Bag_title_status"));	
 		String expectedBagPrice = productPage.getBagPrice();
 		sft.assertEquals(expectedBagPrice, hs.get("products_page_Bag_price"));
+		TestReport.getTest().log(Status.INFO, hs.get("products_page_Bag_price_status"));
 		sft.assertAll();
 	}
 	
-	@Test(priority = 1)
+	@Test(priority = 2,groups = "regression")
 	public void validateProductsOnProductDetailsPage() throws Exception {
 		SoftAssert sft = new SoftAssert();
-		
 		detailsPage = productPage.pressBagTitle();		
 		String expectedBagTitle = detailsPage.getBagTitle();
 		sft.assertEquals(expectedBagTitle, hs.get("products_page_Bag_title"));
-		
+		TestReport.getTest().log(Status.INFO, hs.get("products_details_page_Bag_title_status_msg"));
 		detailsPage.scrollToBagPrice();
 		String expectedBagDesc = detailsPage.getBagDescription();
 		sft.assertEquals(expectedBagDesc, hs.get("product_details_page_Bag_description"));
-		
+		TestReport.getTest().log(Status.INFO, hs.get("product_details_page_Bag_description_status_msg"));
 		String expectedBagPrice = detailsPage.getBagPrice();
 		sft.assertEquals(expectedBagPrice, hs.get("product_details_page_Bag_price"));
+		TestReport.getTest().log(Status.INFO, hs.get("product_details_page_Bag_price_status_msg"));
 		productPage = detailsPage.pressBackToProductButton();
-		
 		sft.assertAll();
 	}
   }

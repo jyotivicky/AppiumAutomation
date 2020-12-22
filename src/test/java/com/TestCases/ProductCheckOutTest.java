@@ -5,9 +5,7 @@ import java.io.InputStream;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 import org.testng.annotations.AfterClass;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import com.BaseClass.TestBase;
@@ -33,7 +31,7 @@ import com.aventstack.extentreports.Status;
 	SettingPage settingPage;
 
 	@BeforeClass
-	public void beforeClass() throws IOException {
+	public void jsonDataInitialaization() throws IOException {
 		InputStream datais = null;
 		try {
 			String dataFileName = "TestData/TestData.json";
@@ -50,6 +48,7 @@ import com.aventstack.extentreports.Status;
 		}
 		closeApp();
 		lunchApp();
+		
 		loginPage = new LoginPage();
 		productPage = new ProductPage();
 		cartCheckout = new CartCheckoutPage();
@@ -57,17 +56,17 @@ import com.aventstack.extentreports.Status;
 		checkoutInfo = new CheckoutInformationPage();
 		overview = new CheckoutOverviewPage();
 		loginPage = new LoginPage();
-		productPage = loginPage.userLogin(info.getJSONObject("validUser").getString("username"), 
+		loginPage.userLogin(info.getJSONObject("validUser").getString("username"), 
 				info.getJSONObject("validUser").getString("password"));
 	}
 
 	@AfterClass
-	public void afterClass() {
+	public void logOutAndTearDown() {
 		settingPage = productPage.pressSettingsBtn();
 		loginPage = settingPage.pressLogOutBtn();
 	}
 
-	@Test(priority = 1)
+	@Test(priority = 1, groups = "regression")
 	public void validateAddToCart() throws Exception {
 		SoftAssert sft = new SoftAssert();
 		cartCheckout.pressAddToCart();
@@ -78,7 +77,7 @@ import com.aventstack.extentreports.Status;
 		sft.assertAll();
 	}
 	
-	@Test(dependsOnMethods = {"validateAddToCart"})
+	@Test(dependsOnMethods = {"validateAddToCart"}, groups = "regression")
 	public void validateProductOnCartPage() {
 		SoftAssert sft = new SoftAssert();
 		String YourCart = cartPage.getPageTitleText();
@@ -88,7 +87,7 @@ import com.aventstack.extentreports.Status;
 		sft.assertAll();
 	}	
 		
-	@Test(dependsOnMethods = {"validateProductOnCartPage"})
+	@Test(dependsOnMethods = {"validateProductOnCartPage"}, groups = "regression")
 	public void validateProductOnInformationPage() {	
 		SoftAssert sft = new SoftAssert();
 		String infoPage = checkoutInfo.getPageTitle();
@@ -101,7 +100,7 @@ import com.aventstack.extentreports.Status;
 		sft.assertAll();
 	}
 	
-	@Test(dependsOnMethods = {"validateProductOnInformationPage"})
+	@Test(dependsOnMethods = {"validateProductOnInformationPage"}, groups = "regression")
 	public void validateProductOnOverviewPage() throws InterruptedException {
 		SoftAssert sft = new SoftAssert();
 		String overviewPage = overview.getPageTitleText();
@@ -123,8 +122,7 @@ import com.aventstack.extentreports.Status;
 		sft.assertAll();
 	}
  
-
-}
+  }
 
     
     
