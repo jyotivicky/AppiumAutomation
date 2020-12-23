@@ -1,0 +1,61 @@
+# Created at 2020-12-23T19:42:26.791
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(Unknown Source)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Unknown Source)
+
+
+# Created at 2020-12-23T19:42:27.405
+Unexpected IOException with stream: 2020-12-23 19:42:27 INFO  LoginPage:31 - Login with : secret_sauce
+
+
+# Created at 2020-12-23T19:42:30.337
+Unexpected IOException with stream: 2020-12-23 19:42:30 INFO  LoginPage:38 - Click On Login Button
+
+
+# Created at 2020-12-23T19:42:33.240
+Unexpected IOException: 6,1,com.TestCases.LoginTest,invalidUsernameTest(com.TestCases.LoginTest),null,null,null
+
+
+# Created at 2020-12-23T19:42:37.038
+Unexpected IOException: 5,1,com.TestCases.LoginTest,invalidPasswordTest(com.TestCases.LoginTest),somke,null,null
+
+
+# Created at 2020-12-23T19:42:37.788
+Unexpected IOException with stream: 2020-12-23 19:42:37 INFO  LoginPage:23 - Login with : standard_user
+
+
+# Created at 2020-12-23T19:42:40.262
+Unexpected IOException with stream: 2020-12-23 19:42:40 INFO  LoginPage:31 - Login with : invalidpassword
+
+
+# Created at 2020-12-23T19:42:42.166
+Unexpected IOException with stream: 2020-12-23 19:42:42 INFO  LoginPage:38 - Click On Login Button
+
+
+# Created at 2020-12-23T19:42:44.190
+Unexpected IOException: 6,1,com.TestCases.LoginTest,invalidPasswordTest(com.TestCases.LoginTest),null,null,null
+
+
+# Created at 2020-12-23T19:42:48.202
+Unexpected IOException: 5,1,com.TestCases.LoginTest,validUsernameTest(com.TestCases.LoginTest),somke,null,null
+
+
+# Created at 2020-12-23T19:42:48.865
+Unexpected IOException with stream: 2020-12-23 19:42:48 INFO  LoginPage:23 - Login with : standard_user
+
+
+# Created at 2020-12-23T19:42:51.080
+Unexpected IOException with stream: 2020-12-23 19:42:51 INFO  LoginPage:31 - Login with : secret_sauce
+
+
+# Created at 2020-12-23T19:42:52.798
+Unexpected IOException with stream: 2020-12-23 19:42:52 INFO  LoginPage:38 - Click On Login Button
+
+
+# Created at 2020-12-23T19:43:02.728
+Unexpected IOException: 6,1,com.TestCases.LoginTest,validUsernameTest(com.TestCases.LoginTest),null,null,null
+
+

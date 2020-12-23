@@ -1,6 +1,7 @@
 D:\ProjectSelenium\Appium_Framework\src\main\java\com\Pages\CartCheckoutPage.java
 D:\ProjectSelenium\Appium_Framework\src\main\java\com\Pages\CheckoutInformationPage.java
 D:\ProjectSelenium\Appium_Framework\src\main\java\com\Pages\SettingPage.java
+D:\ProjectSelenium\Appium_Framework\src\main\java\com\utility\mobileBotUtility.java
 D:\ProjectSelenium\Appium_Framework\src\main\java\com\Pages\MenuPage.java
 D:\ProjectSelenium\Appium_Framework\src\main\java\com\utility\BrowserStackTest.java
 D:\ProjectSelenium\Appium_Framework\src\main\java\com\utility\TimeUtils.java
@@ -15,6 +16,5 @@ D:\ProjectSelenium\Appium_Framework\src\main\java\com\BaseClass\BrowserStackClas
 D:\ProjectSelenium\Appium_Framework\src\main\java\com\Pages\LoginPage.java
 D:\ProjectSelenium\Appium_Framework\src\main\java\com\Pages\YourCartPage.java
 D:\ProjectSelenium\Appium_Framework\src\main\java\com\Pages\CheckoutOverviewPage.java
-D:\ProjectSelenium\Appium_Framework\src\main\java\com\utility\MobileBot.java
 D:\ProjectSelenium\Appium_Framework\src\main\java\com\utility\ReadConfig.java
 D:\ProjectSelenium\Appium_Framework\src\main\java\com\utility\TestUtility.java

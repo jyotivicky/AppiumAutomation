@@ -4,9 +4,7 @@ com\Pages\SettingPage.class
 com\BaseClass\TestBase.class
 com\Listener\TestListner.class
 com\Pages\MenuPage.class
-com\utility\MobileBot$1.class
 com\utility\ReadConfig.class
-com\utility\MobileBot.class
 com\Report\TestReport.class
 com\utility\TestUtility.class
 com\Pages\LoginPage.class
