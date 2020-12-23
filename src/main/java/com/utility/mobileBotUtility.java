@@ -60,7 +60,6 @@ import io.appium.java_client.touch.offset.PointOption;
 		ts.press(PointOption.point(x, startY)).waitAction(waitOptions(ofMillis(1000)))
 				.moveTo(PointOption.point(x, endY)).release().perform();
 	}
-
 	/*
 	 * to check whether element is visible or not in the UI
 	 * It will return True or False
