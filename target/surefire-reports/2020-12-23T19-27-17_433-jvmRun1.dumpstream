@@ -1,0 +1,53 @@
+# Created at 2020-12-23T19:28:38.396
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(Unknown Source)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Unknown Source)
+
+
+# Created at 2020-12-23T19:28:41.514
+Unexpected IOException: 6,1,com.TestCases.LoginTest,invalidUsernameTest(com.TestCases.LoginTest),null,null,null
+
+
+# Created at 2020-12-23T19:28:46.609
+Unexpected IOException: 5,1,com.TestCases.LoginTest,invalidPasswordTest(com.TestCases.LoginTest),somke,null,null
+
+
+# Created at 2020-12-23T19:28:47.096
+Unexpected IOException with stream: 2020-12-23 19:28:47 INFO  LoginPage:23 - Login with : standard_user
+
+
+# Created at 2020-12-23T19:28:48.979
+Unexpected IOException with stream: 2020-12-23 19:28:48 INFO  LoginPage:31 - Login with : invalidpassword
+
+
+# Created at 2020-12-23T19:28:50.873
+Unexpected IOException with stream: 2020-12-23 19:28:50 INFO  LoginPage:38 - Click On Login Button
+
+
+# Created at 2020-12-23T19:28:53.129
+Unexpected IOException: 6,1,com.TestCases.LoginTest,invalidPasswordTest(com.TestCases.LoginTest),null,null,null
+
+
+# Created at 2020-12-23T19:28:56.021
+Unexpected IOException: 5,1,com.TestCases.LoginTest,validUsernameTest(com.TestCases.LoginTest),somke,null,null
+
+
+# Created at 2020-12-23T19:28:56.465
+Unexpected IOException with stream: 2020-12-23 19:28:56 INFO  LoginPage:23 - Login with : standard_user
+
+
+# Created at 2020-12-23T19:28:58.598
+Unexpected IOException with stream: 2020-12-23 19:28:58 INFO  LoginPage:31 - Login with : secret_sauce
+
+
+# Created at 2020-12-23T19:28:59.868
+Unexpected IOException with stream: 2020-12-23 19:28:59 INFO  LoginPage:38 - Click On Login Button
+
+
+# Created at 2020-12-23T19:29:07.680
+Unexpected IOException: 6,1,com.TestCases.LoginTest,validUsernameTest(com.TestCases.LoginTest),null,null,null
+
+

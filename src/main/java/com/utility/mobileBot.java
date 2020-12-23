@@ -35,8 +35,6 @@ import io.appium.java_client.touch.offset.PointOption;
     public class MobileBot {
 	public static AppiumDriver driver;
 	public static TimeUtils timeUtils;
-
-	
 	
 	/*
 	 * to Scroll Down or Up based on the argument we pass
@@ -63,6 +61,8 @@ import io.appium.java_client.touch.offset.PointOption;
 				.moveTo(PointOption.point(x, endY)).release().perform();
 	}
 
+	
+	
 	/*
 	 * to check whether element is visible or not in the UI
 	 * It will return True or False
