@@ -33,9 +33,11 @@ import io.appium.java_client.touch.offset.ElementOption;
 import io.appium.java_client.touch.offset.PointOption;
 
     public class MobileBot {
-	protected static AppiumDriver driver;
+	public static AppiumDriver driver;
 	public static TimeUtils timeUtils;
 
+	
+	
 	/*
 	 * to Scroll Down or Up based on the argument we pass
 	 */
