@@ -7,11 +7,16 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+import io.appium.java_client.remote.AndroidMobileCapabilityType;
+import io.appium.java_client.remote.MobileCapabilityType;
+
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import com.utility.TestUtility;
 import com.Report.TestReport;
 import com.aventstack.extentreports.Status;
+import com.sun.tools.classfile.StackMap_attribute.stack_map_frame;
+import com.utility.BrowserStackTest;
 import com.utility.GetAppiumStatus;
 import com.utility.TimeUtils;
 import org.apache.commons.codec.binary.Base64;
@@ -21,6 +26,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
+import java.time.Duration;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
@@ -39,7 +45,7 @@ import org.testng.annotations.BeforeSuite;
 
 public class TestBase {
 
-	protected static AppiumDriver driver;
+	public static AppiumDriver driver;
 	protected static Properties props;
 	protected static HashMap<String, String> hs = new HashMap<String, String>();
 	InputStream inputStream;
@@ -48,12 +54,11 @@ public class TestBase {
 	protected static TestUtility utility;
 	private static AppiumDriverLocalService server;
 	public static GetAppiumStatus getAppium = new GetAppiumStatus();
-
 	public static ThreadLocal<String> platform = new ThreadLocal<String>();
 	public static ThreadLocal<String> deviceName = new ThreadLocal<String>();
 
 	public TestBase() {
-		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
+		PageFactory.initElements(new AppiumFieldDecorator(driver, Duration.ofSeconds(20)), this);
 	}
 
 	public void setPlatform(String Platform) {
@@ -108,6 +113,11 @@ public class TestBase {
 		server.stop();
 		utility.log().info("Appium Server Stopped Sucessfully");
 	}
+	
+	@AfterTest
+	public void afterTest() {
+		driver.quit();
+	}
 
 	/*
 	 * To Start video capturing and create *.mp4 file
@@ -123,7 +133,6 @@ public class TestBase {
 	@AfterMethod
 	public void stopVideoRecording(ITestResult result) throws Exception {
 		String media = ((CanRecordScreen) driver).stopRecordingScreen();
-
 		Map<String, String> params = result.getTestContext().getCurrentXmlTest().getAllParameters();
 
 		String dirPath = "TestVideos" + File.separator + params.get("platformName") + "_" + params.get("deviceName")
@@ -147,14 +156,11 @@ public class TestBase {
 		}
 	}
 
-	@Parameters({"emulator", "platformName", "platformVersion", "deviceName" })
+	@Parameters({"emulator", "platformName", "platformVersion", "deviceName"})
 	@BeforeTest
 	public void DriverInitializataion(String emulator, String platformName, String platformVersion, String deviceName) throws Exception {
-
 		utility = new TestUtility();
 		dateTime = utility.dateTime();
-//		platform = platformName;
-
 		setPlatform(platformName);
 		setDeviceName(deviceName);
 		URL appiumURL;
@@ -168,7 +174,6 @@ public class TestBase {
 			hs = utility.parseStringXML(inputString);
 
 			DesiredCapabilities cap = new DesiredCapabilities();
-//			cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
 			cap.setCapability("platformName", platformName);
 			cap.setCapability("deviceName", deviceName);
 //			cap.setCapability("udid", udid);
@@ -179,26 +184,32 @@ public class TestBase {
 				cap.setCapability("automationName", props.getProperty("AndroidAutomation"));
 				if (emulator.equalsIgnoreCase("true")) {
 					cap.setCapability("platformVersion", platformVersion);
-					cap.setCapability("avd", deviceName);
+					cap.setCapability("deviceName", deviceName);
 					cap.setCapability("avdLaunchTimeout", 120000);
 					cap.setCapability("appPackage", props.getProperty("Apppackage"));
 					cap.setCapability("appActivity", props.getProperty("Appactivity"));
 				}
 				if (emulator.equalsIgnoreCase("false")) {
+					
+					final String USERNAME = "vicky280";
+					final String AUTOMATE_KEY = "Jcim5xTfXggAJqXoVqEG";
+					final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
+					  
+					cap.setCapability("deviceName", deviceName);
 					cap.setCapability("platformVersion", platformVersion);
-					cap.setCapability("avd", deviceName);
-					cap.setCapability("avdLaunchTimeout", 120000);
-					cap.setCapability("browserstack.user", "vickydas1");
-					cap.setCapability("browserstack.key", "h5PRyirTSKdfmwPLYpQy");
-					cap.setCapability("app", "bs://909b4cf56d0bc2c289741ba80bbf9673d2e05621");
+//					cap.setCapability("realMobile", "true");
+//					cap.setCapability("avdLaunchTimeout", 120000);
+//					cap.setCapability("browserstack.user", "vicky280");
+//					cap.setCapability("browserstack.key", "Jcim5xTfXggAJqXoVqEG");			
+					cap.setCapability("app", "bs://4a0ef38be50c8b64ed402493693a31f0dce75187");
+//					cap.setCapability("appWaitDuration", 30000);
 					cap.setCapability("project", "First Java Project");
 					cap.setCapability("build", "Android Testing");
-					cap.setCapability("name", "First_Test");
-					AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(new URL("http://hub.browserstack.com/wd/hub"), cap);
+					cap.setCapability("name", "First_Test_002");
+					AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(new URL(URL), cap);
 				}
 				driver = new AndroidDriver(appiumURL, cap);
 				break;
-
 			default:
 				throw new Exception("Invalid platform! - " + platformName);
 			}
@@ -280,9 +291,6 @@ public class TestBase {
 		((InteractsWithApps) driver).closeApp();
 	}
 
-	@AfterTest
-	public void afterTest() {
-		driver.quit();
-	}
+
 
 }

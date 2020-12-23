@@ -33,7 +33,7 @@ public class TestListner implements ITestListener {
 			System.out.println(sw.toString());
 		}
 
-		TestBase base = new TestBase();
+		TestBase base = new TestBase();		
 		File file = base.getTheDriver().getScreenshotAs(OutputType.FILE);
 
 		byte[] encoded = null;
@@ -58,7 +58,6 @@ public class TestListner implements ITestListener {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-//		TestReport.getTest().log(Status.FAIL, "Test Case Got Failed");
 		try {
 			TestReport.getTest().fail("Test Case Got Failed",
 					MediaEntityBuilder.createScreenCaptureFromPath(completeImagePath).build());

@@ -1,11 +1,13 @@
 package com.Pages;
 
 import com.BaseClass.TestBase;
+
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
 
     public class LoginPage extends TestBase {
-
+    	
 	@AndroidFindBy(accessibility = "test-Username") private MobileElement userNameTextFld;
 
 	@AndroidFindBy(accessibility = "test-Password") private MobileElement passwordTxtFld;
@@ -16,6 +18,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 	private MobileElement errTxt;
 
 	public LoginPage enterUsername(String username) {
+		waitForVisibilty(userNameTextFld);
 		clear(userNameTextFld);
 		utility.log().info("Login with : " + username);
 		sendKeys(userNameTextFld, username);
@@ -23,6 +26,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 	}
 
 	public LoginPage enterPassword(String password) {
+		waitForVisibilty(passwordTxtFld);
 		clear(passwordTxtFld);
 		utility.log().info("Login with : " + password);
 		sendKeys(passwordTxtFld, password);
@@ -30,6 +34,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 	}
 
 	public void clickLoginButton() {
+		waitForVisibilty(loginBtn);
 		utility.log().info("Click On Login Button");
 		click(loginBtn);
 //		return new ProductPage();
@@ -39,7 +44,6 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 		enterUsername(username);
 		enterPassword(password);
 		click(loginBtn);
-//		return clickLoginButton();
 	}
 
 	public String getErrorTxt() {

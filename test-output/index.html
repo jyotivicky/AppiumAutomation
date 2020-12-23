@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -100,6 +100,16 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
                     <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.TestCases.LoginTest" hash-for-method="invalidPasswordTest">invalidPasswordTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.TestCases.LoginTest" hash-for-method="invalidUsernameTest">invalidUsernameTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.TestCases.LoginTest" hash-for-method="validUsernameTest">validUsernameTest</a> <!-- method navigator-link -->
@@ -125,6 +135,20 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="invalidPasswordTest">
+                  </a> <!-- invalidPasswordTest -->
+                  <span class="method-name">invalidPasswordTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invalidUsernameTest">
+                  </a> <!-- invalidUsernameTest -->
+                  <span class="method-name">invalidUsernameTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="validUsernameTest">
                   </a> <!-- validUsernameTest -->
                   <span class="method-name">validUsernameTest</span>
@@ -141,7 +165,7 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+&lt;suite name=&quot;Suite&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.Listener.TestListner&quot;/&gt;
   &lt;/listeners&gt;
@@ -180,6 +204,14 @@
               <span class="test-group-name">somke</span>
               <br/>
               <div class="method-in-group">
+                <span class="method-in-group-name">invalidPasswordTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">invalidUsernameTest</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
                 <span class="method-in-group-name">validUsernameTest</span>
                 <br/>
               </div> <!-- method-in-group -->
@@ -200,16 +232,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'validUsernameTest')
+data.setCell(0, 1, 'invalidUsernameTest')
 data.setCell(0, 2, 'com.TestCases.LoginTest')
-data.setCell(0, 3, 11420);
+data.setCell(0, 3, 11191);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'validUsernameTest')
+data.setCell(1, 2, 'com.TestCases.LoginTest')
+data.setCell(1, 3, 11154);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'invalidPasswordTest')
+data.setCell(2, 2, 'com.TestCases.LoginTest')
+data.setCell(2, 3, 4849);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -224,18 +264,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">2 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.TestCases.LoginTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">invalidPasswordTest</span>
-                <br/>
-                <span class="ignored-method-name">invalidUsernameTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -251,35 +282,67 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">DriverInitializataion(true, Android, 9.0, Pixel_2)</span>
-                <span class="method-start">2245 ms</span>
+                <span class="method-start">3948 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-class before">
                 <span class="method-name">jsonDataInitialaization</span>
-                <span class="method-start">24652 ms</span>
+                <span class="method-start">32061 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">startVideoRecording</span>
-                <span class="method-start">30203 ms</span>
+                <span class="method-start">39790 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">Initialaization</span>
-                <span class="method-start">31872 ms</span>
+                <span class="method-start">41256 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidUsernameTest</span>
+                <span class="method-start">41654 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">stopVideoRecording([TestResult name=invalidUsernameTest status=SUCCESS method=LoginTest.invalidUsernameTest()[pri:1, in...)</span>
+                <span class="method-start">52848 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startVideoRecording</span>
+                <span class="method-start">54733 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Initialaization</span>
+                <span class="method-start">56273 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">invalidPasswordTest</span>
+                <span class="method-start">56278 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">stopVideoRecording([TestResult name=invalidPasswordTest status=SUCCESS method=LoginTest.invalidPasswordTest()[pri:2, in...)</span>
+                <span class="method-start">61130 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">startVideoRecording</span>
+                <span class="method-start">62564 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">Initialaization</span>
+                <span class="method-start">63797 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validUsernameTest</span>
-                <span class="method-start">32471 ms</span>
+                <span class="method-start">63800 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">stopVideoRecording([TestResult name=validUsernameTest status=SUCCESS method=LoginTest.validUsernameTest()[pri:1, instan...)</span>
-                <span class="method-start">43894 ms</span>
+                <span class="method-name">stopVideoRecording([TestResult name=validUsernameTest status=SUCCESS method=LoginTest.validUsernameTest()[pri:3, instan...)</span>
+                <span class="method-start">74957 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-test after">
                 <span class="method-name">afterTest</span>
-                <span class="method-start">45804 ms</span>
+                <span class="method-start">77118 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">stopAppiumServer</span>
-                <span class="method-start">50468 ms</span>
+                <span class="method-start">83122 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

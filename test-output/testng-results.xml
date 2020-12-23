@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="45753" started-at="2020-12-23T07:02:12Z" finished-at="2020-12-23T07:02:58Z">
+  <suite name="Suite" duration-ms="76817" started-at="2020-12-23T13:11:01Z" finished-at="2020-12-23T13:12:18Z">
     <groups>
       <group name="somke">
-        <method signature="LoginTest.validUsernameTest()[pri:1, instance:com.TestCases.LoginTest@64485a47]" name="validUsernameTest" class="com.TestCases.LoginTest"/>
+        <method signature="LoginTest.invalidPasswordTest()[pri:2, instance:com.TestCases.LoginTest@25bbf683]" name="invalidPasswordTest" class="com.TestCases.LoginTest"/>
+        <method signature="LoginTest.invalidUsernameTest()[pri:1, instance:com.TestCases.LoginTest@25bbf683]" name="invalidUsernameTest" class="com.TestCases.LoginTest"/>
+        <method signature="LoginTest.validUsernameTest()[pri:3, instance:com.TestCases.LoginTest@25bbf683]" name="validUsernameTest" class="com.TestCases.LoginTest"/>
       </group> <!-- somke -->
     </groups>
-    <test name="Mobile Automation Test on Pixel 2" duration-ms="45753" started-at="2020-12-23T07:02:12Z" finished-at="2020-12-23T07:02:58Z">
+    <test name="Mobile Automation Test on Pixel 2" duration-ms="76817" started-at="2020-12-23T13:11:01Z" finished-at="2020-12-23T13:12:18Z">
       <class name="com.TestCases.LoginTest">
-        <test-method status="PASS" signature="startAppiumServer()[pri:0, instance:com.TestCases.LoginTest@64485a47]" name="startAppiumServer" is-config="true" duration-ms="2241" started-at="2020-12-23T12:32:10Z" finished-at="2020-12-23T12:32:12Z">
+        <test-method status="PASS" signature="startAppiumServer()[pri:0, instance:com.TestCases.LoginTest@25bbf683]" name="startAppiumServer" is-config="true" duration-ms="3940" started-at="2020-12-23T18:40:57Z" finished-at="2020-12-23T18:41:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startAppiumServer -->
-        <test-method status="PASS" signature="DriverInitializataion(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.TestCases.LoginTest@64485a47]" name="DriverInitializataion" is-config="true" duration-ms="22395" started-at="2020-12-23T12:32:12Z" finished-at="2020-12-23T12:32:35Z">
+        <test-method status="PASS" signature="DriverInitializataion(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.TestCases.LoginTest@25bbf683]" name="DriverInitializataion" is-config="true" duration-ms="28094" started-at="2020-12-23T18:41:01Z" finished-at="2020-12-23T18:41:29Z">
           <params>
             <param index="0">
               <value>
@@ -40,38 +42,84 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DriverInitializataion -->
-        <test-method status="PASS" signature="jsonDataInitialaization()[pri:0, instance:com.TestCases.LoginTest@64485a47]" name="jsonDataInitialaization" is-config="true" duration-ms="5544" started-at="2020-12-23T12:32:35Z" finished-at="2020-12-23T12:32:40Z">
+        <test-method status="PASS" signature="jsonDataInitialaization()[pri:0, instance:com.TestCases.LoginTest@25bbf683]" name="jsonDataInitialaization" is-config="true" duration-ms="7721" started-at="2020-12-23T18:41:29Z" finished-at="2020-12-23T18:41:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- jsonDataInitialaization -->
-        <test-method status="PASS" signature="startVideoRecording()[pri:0, instance:com.TestCases.LoginTest@64485a47]" name="startVideoRecording" is-config="true" duration-ms="1669" started-at="2020-12-23T12:32:40Z" finished-at="2020-12-23T12:32:42Z">
+        <test-method status="PASS" signature="startVideoRecording()[pri:0, instance:com.TestCases.LoginTest@25bbf683]" name="startVideoRecording" is-config="true" duration-ms="1466" started-at="2020-12-23T18:41:37Z" finished-at="2020-12-23T18:41:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startVideoRecording -->
-        <test-method status="PASS" signature="Initialaization()[pri:0, instance:com.TestCases.LoginTest@64485a47]" name="Initialaization" is-config="true" duration-ms="599" started-at="2020-12-23T12:32:42Z" finished-at="2020-12-23T12:32:42Z">
+        <test-method status="PASS" signature="Initialaization()[pri:0, instance:com.TestCases.LoginTest@25bbf683]" name="Initialaization" is-config="true" duration-ms="398" started-at="2020-12-23T18:41:38Z" finished-at="2020-12-23T18:41:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initialaization -->
-        <test-method status="PASS" signature="validUsernameTest()[pri:1, instance:com.TestCases.LoginTest@64485a47]" name="validUsernameTest" duration-ms="11420" started-at="2020-12-23T12:32:42Z" finished-at="2020-12-23T12:32:54Z">
+        <test-method status="PASS" signature="invalidUsernameTest()[pri:1, instance:com.TestCases.LoginTest@25bbf683]" name="invalidUsernameTest" duration-ms="11191" started-at="2020-12-23T18:41:39Z" finished-at="2020-12-23T18:41:50Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validUsernameTest -->
-        <test-method status="PASS" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.LoginTest@64485a47]" name="stopVideoRecording" is-config="true" duration-ms="1908" started-at="2020-12-23T12:32:54Z" finished-at="2020-12-23T12:32:56Z">
+        </test-method> <!-- invalidUsernameTest -->
+        <test-method status="PASS" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.LoginTest@25bbf683]" name="stopVideoRecording" is-config="true" duration-ms="1884" started-at="2020-12-23T18:41:50Z" finished-at="2020-12-23T18:41:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validUsernameTest status=SUCCESS method=LoginTest.validUsernameTest()[pri:1, instance:com.TestCases.LoginTest@64485a47] output={null}]]]>
+                <![CDATA[[TestResult name=invalidUsernameTest status=SUCCESS method=LoginTest.invalidUsernameTest()[pri:1, instance:com.TestCases.LoginTest@25bbf683] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopVideoRecording -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.TestCases.LoginTest@64485a47]" name="afterTest" is-config="true" duration-ms="2190" started-at="2020-12-23T12:32:56Z" finished-at="2020-12-23T12:32:58Z">
+        <test-method status="PASS" signature="startVideoRecording()[pri:0, instance:com.TestCases.LoginTest@25bbf683]" name="startVideoRecording" is-config="true" duration-ms="1539" started-at="2020-12-23T18:41:52Z" finished-at="2020-12-23T18:41:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startVideoRecording -->
+        <test-method status="PASS" signature="Initialaization()[pri:0, instance:com.TestCases.LoginTest@25bbf683]" name="Initialaization" is-config="true" duration-ms="5" started-at="2020-12-23T18:41:53Z" finished-at="2020-12-23T18:41:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Initialaization -->
+        <test-method status="PASS" signature="invalidPasswordTest()[pri:2, instance:com.TestCases.LoginTest@25bbf683]" name="invalidPasswordTest" duration-ms="4849" started-at="2020-12-23T18:41:53Z" finished-at="2020-12-23T18:41:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPasswordTest -->
+        <test-method status="PASS" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.LoginTest@25bbf683]" name="stopVideoRecording" is-config="true" duration-ms="1433" started-at="2020-12-23T18:41:58Z" finished-at="2020-12-23T18:42:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidPasswordTest status=SUCCESS method=LoginTest.invalidPasswordTest()[pri:2, instance:com.TestCases.LoginTest@25bbf683] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopVideoRecording -->
+        <test-method status="PASS" signature="startVideoRecording()[pri:0, instance:com.TestCases.LoginTest@25bbf683]" name="startVideoRecording" is-config="true" duration-ms="1233" started-at="2020-12-23T18:42:00Z" finished-at="2020-12-23T18:42:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startVideoRecording -->
+        <test-method status="PASS" signature="Initialaization()[pri:0, instance:com.TestCases.LoginTest@25bbf683]" name="Initialaization" is-config="true" duration-ms="3" started-at="2020-12-23T18:42:01Z" finished-at="2020-12-23T18:42:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Initialaization -->
+        <test-method status="PASS" signature="validUsernameTest()[pri:3, instance:com.TestCases.LoginTest@25bbf683]" name="validUsernameTest" duration-ms="11154" started-at="2020-12-23T18:42:01Z" finished-at="2020-12-23T18:42:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validUsernameTest -->
+        <test-method status="PASS" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.LoginTest@25bbf683]" name="stopVideoRecording" is-config="true" duration-ms="2158" started-at="2020-12-23T18:42:12Z" finished-at="2020-12-23T18:42:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=validUsernameTest status=SUCCESS method=LoginTest.validUsernameTest()[pri:3, instance:com.TestCases.LoginTest@25bbf683] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopVideoRecording -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.TestCases.LoginTest@25bbf683]" name="afterTest" is-config="true" duration-ms="3639" started-at="2020-12-23T18:42:14Z" finished-at="2020-12-23T18:42:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="stopAppiumServer()[pri:0, instance:com.TestCases.LoginTest@64485a47]" name="stopAppiumServer" is-config="true" duration-ms="2" started-at="2020-12-23T12:33:00Z" finished-at="2020-12-23T12:33:00Z">
+        <test-method status="PASS" signature="stopAppiumServer()[pri:0, instance:com.TestCases.LoginTest@25bbf683]" name="stopAppiumServer" is-config="true" duration-ms="21" started-at="2020-12-23T18:42:20Z" finished-at="2020-12-23T18:42:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopAppiumServer -->
