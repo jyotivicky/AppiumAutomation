@@ -23,6 +23,7 @@ import com.utility.TestUtility;
 
 public class TestListner implements ITestListener {
 	TestUtility utils = new TestUtility();
+	TestBase base = new TestBase();
 
 	public void onTestFailure(ITestResult result) {
 		if (result.getThrowable() != null) {

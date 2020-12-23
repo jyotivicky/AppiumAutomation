@@ -101,27 +101,6 @@ import com.BaseClass.TestBase;
 		return LogManager.getLogger(Thread.currentThread().getStackTrace()[2].getClassName());
 	}
 	
-	/*
-	 * To read the json data for login 
-	 */
-//	public void readJsonData() throws IOException {
-//		InputStream datais = null;
-//		try {
-//			String dataFileName = "TestData/TestData.json";
-//			datais = getClass().getClassLoader().getResourceAsStream(dataFileName);
-//			JSONTokener tokener = new JSONTokener(datais);
-//			loginUsers = new JSONObject(tokener);
-//		} catch (Exception e) {
-//			e.printStackTrace();
-//			throw e;
-//		} finally {
-//			if (datais != null) {
-//				datais.close();
-//			}
-//		}
-//		closeApp();
-//		lunchApp();
-//	}
 }
 
     

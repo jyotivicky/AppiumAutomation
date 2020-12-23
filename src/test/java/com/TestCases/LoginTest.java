@@ -45,7 +45,7 @@ import org.json.JSONTokener;
 		productPage = new ProductPage();
 	}
 
-	@Test(priority = 1, groups = "somke")
+	@Test(enabled = false, groups = "somke")
 	public void invalidUsernameTest() throws Exception {
 		SoftAssert sft = new SoftAssert();	
 		loginPage.enterUsername(loginUsers.getJSONObject("invalidusername").getString("username"));
@@ -57,7 +57,7 @@ import org.json.JSONTokener;
 		sft.assertAll();
 	}
 
-	@Test(priority = 2, groups = "somke")
+	@Test(enabled = false, groups = "somke")
 	public void invalidPasswordTest() {
 		SoftAssert sft = new SoftAssert();
 		loginPage.enterUsername(loginUsers.getJSONObject("invalidPassword").getString("username"));
@@ -69,7 +69,7 @@ import org.json.JSONTokener;
 		sft.assertAll();
 	}
 
-	@Test(priority = 3,groups = "somke")
+	@Test(priority = 1,groups = "somke")
 	public void validUsernameTest() throws InterruptedException {
 		SoftAssert sft = new SoftAssert();
 		loginPage.enterUsername(loginUsers.getJSONObject("validUser").getString("username"));

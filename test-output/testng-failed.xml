@@ -19,28 +19,4 @@
       <class name="com.TestCases.LoginTest"/>
     </classes>
   </test> <!-- Mobile Automation Test on Pixel 2 -->
-  <test name="Mobile Automation Test on Pixel 2(failed)">
-    <parameter name="emulator" value="true"/>
-    <parameter name="platformVersion" value="9.0"/>
-    <parameter name="platformName" value="Android"/>
-    <parameter name="udid" value="emulator-5554"/>
-    <parameter name="deviceName" value="Pixel_2"/>
-    <classes>
-      <class name="com.TestCases.LoginTest">
-        <methods>
-          <include name="stopVideoRecording"/>
-          <include name="DriverInitializataion"/>
-          <include name="startAppiumServer"/>
-          <include name="startVideoRecording"/>
-          <include name="validUsernameTest"/>
-          <include name="stopAppiumServer"/>
-          <include name="jsonDataInitialaization"/>
-          <include name="afterTest"/>
-          <include name="Initialaization"/>
-          <include name="invalidPasswordTest"/>
-          <include name="invalidUsernameTest"/>
-        </methods>
-      </class> <!-- com.TestCases.LoginTest -->
-    </classes>
-  </test> <!-- Mobile Automation Test on Pixel 2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

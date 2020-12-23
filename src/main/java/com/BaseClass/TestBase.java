@@ -5,8 +5,8 @@ import io.appium.java_client.FindsByAndroidUIAutomator;
 import io.appium.java_client.InteractsWithApps;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-import io.appium.java_client.remote.MobileCapabilityType;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import com.utility.TestUtility;
@@ -37,27 +37,27 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
-    public class TestBase {
+public class TestBase {
+
 	protected static AppiumDriver driver;
 	protected static Properties props;
 	protected static HashMap<String, String> hs = new HashMap<String, String>();
 	InputStream inputStream;
 	InputStream inputString;
-//	protected static String platform;
 	protected static String dateTime;
 	protected static TestUtility utility;
 	private static AppiumDriverLocalService server;
 	public static GetAppiumStatus getAppium = new GetAppiumStatus();
 
-	protected static ThreadLocal<String> platform = new ThreadLocal<String>();
-	protected static ThreadLocal<String> deviceName = new ThreadLocal<String>();
-	
+	public static ThreadLocal<String> platform = new ThreadLocal<String>();
+	public static ThreadLocal<String> deviceName = new ThreadLocal<String>();
+
 	public TestBase() {
 		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
-	
-	public void setPlatform(String platform2) {
-		platform.set(platform2);
+
+	public void setPlatform(String Platform) {
+		platform.set(Platform);
 	}
 
 	public String getPlatform() {
@@ -68,20 +68,20 @@ import org.testng.annotations.BeforeSuite;
 		return deviceName.get();
 	}
 
-	public void setDeviceName(String deviceName2) {
-		deviceName.set(deviceName2);
+	public void setDeviceName(String DeviceName) {
+		deviceName.set(DeviceName);
 	}
-	
+
 	/*
-	 * Here we first check whether Appium start first, If Appium is not running then it 
-	 * will to the go to the If condition and start appium server otherwise it will go 
-	 * to the else section and stop the Appium server and Start Again
+	 * Here we first check whether Appium start first, If Appium is not running then
+	 * it will to the go to the If condition and start appium server otherwise it
+	 * will go to the else section and stop the Appium server and Start Again
 	 */
 	@BeforeSuite
 	public void startAppiumServer() throws Exception, Exception {
 		utility = new TestUtility();
 		server = getAppium.getAppiumServerDefault();
-		if(!getAppium.checkIfAppiumServerIsRunnning(4723)) {
+		if (!getAppium.checkIfAppiumServerIsRunnning(4723)) {
 			server.start();
 			server.clearOutPutStreams();
 			utility.log().info("Appium Server Started Sucessfully");
@@ -89,16 +89,16 @@ import org.testng.annotations.BeforeSuite;
 			utility.log().info("Appium Server Already Running");
 			Runtime runtime = Runtime.getRuntime();
 			try {
-			    runtime.exec("taskkill /F /IM node.exe");
+				runtime.exec("taskkill /F /IM node.exe");
 			} catch (IOException e) {
-			    e.printStackTrace();
+				e.printStackTrace();
 			}
 			server.start();
 //			server.clearOutPutStreams();
 			utility.log().info("Appium Server Started Sucessfully");
-		}	
+		}
 	}
-		
+
 	/*
 	 * Here we are Stopping te Appium Server after all test case got executed
 	 */
@@ -106,7 +106,7 @@ import org.testng.annotations.BeforeSuite;
 	public void stopAppiumServer() {
 		utility = new TestUtility();
 		server.stop();
-		utility.log().info("Appium Server Stopped Sucessfully");	
+		utility.log().info("Appium Server Stopped Sucessfully");
 	}
 
 	/*
@@ -147,11 +147,9 @@ import org.testng.annotations.BeforeSuite;
 		}
 	}
 
-	@Parameters({"udid","emulator","platformName","platformVersion","deviceName"})
+	@Parameters({"emulator", "platformName", "platformVersion", "deviceName" })
 	@BeforeTest
-	public void DriverInitializataion(String udid, String emulator,
-			String platformName, String platformVersion,
-			String deviceName) throws Exception {
+	public void DriverInitializataion(String emulator, String platformName, String platformVersion, String deviceName) throws Exception {
 
 		utility = new TestUtility();
 		dateTime = utility.dateTime();
@@ -159,7 +157,6 @@ import org.testng.annotations.BeforeSuite;
 
 		setPlatform(platformName);
 		setDeviceName(deviceName);
-
 		URL appiumURL;
 		try {
 			props = new Properties();
@@ -171,29 +168,34 @@ import org.testng.annotations.BeforeSuite;
 			hs = utility.parseStringXML(inputString);
 
 			DesiredCapabilities cap = new DesiredCapabilities();
-			cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
+//			cap.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
 			cap.setCapability("platformName", platformName);
 			cap.setCapability("deviceName", deviceName);
-			cap.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, "20");
-			cap.setCapability("udid", udid);
+//			cap.setCapability("udid", udid);
 			appiumURL = new URL(props.getProperty("appiumUrl"));
 
 			switch (platformName) {
 			case "Android":
 				cap.setCapability("automationName", props.getProperty("AndroidAutomation"));
-				cap.setCapability("appPackage", props.getProperty("Apppackage"));
-				cap.setCapability("appActivity", props.getProperty("Appactivity"));
 				if (emulator.equalsIgnoreCase("true")) {
 					cap.setCapability("platformVersion", platformVersion);
 					cap.setCapability("avd", deviceName);
 					cap.setCapability("avdLaunchTimeout", 120000);
-				} 
-							
-//				String systemAndroidApp = System.getProperty("user.dir") + File.separator + "src" + 
-//				File.separator + "test" + File.separator + "resources" + 
-//			    File.separator + "APK_FILES" + File.separator + "SauceLab.apk";
-//				cap.setCapability("app", systemAndroidApp);
-				
+					cap.setCapability("appPackage", props.getProperty("Apppackage"));
+					cap.setCapability("appActivity", props.getProperty("Appactivity"));
+				}
+				if (emulator.equalsIgnoreCase("false")) {
+					cap.setCapability("platformVersion", platformVersion);
+					cap.setCapability("avd", deviceName);
+					cap.setCapability("avdLaunchTimeout", 120000);
+					cap.setCapability("browserstack.user", "vickydas1");
+					cap.setCapability("browserstack.key", "h5PRyirTSKdfmwPLYpQy");
+					cap.setCapability("app", "bs://909b4cf56d0bc2c289741ba80bbf9673d2e05621");
+					cap.setCapability("project", "First Java Project");
+					cap.setCapability("build", "Android Testing");
+					cap.setCapability("name", "First_Test");
+					AndroidDriver<AndroidElement> driver = new AndroidDriver<AndroidElement>(new URL("http://hub.browserstack.com/wd/hub"), cap);
+				}
 				driver = new AndroidDriver(appiumURL, cap);
 				break;
 
@@ -233,7 +235,7 @@ import org.testng.annotations.BeforeSuite;
 		waitForVisibilty(e);
 		e.click();
 	}
-	
+
 	public void click(MobileElement e, String msg) {
 		waitForVisibilty(e);
 		utility.log().info(msg);
@@ -245,21 +247,19 @@ import org.testng.annotations.BeforeSuite;
 		waitForVisibilty(e);
 		e.sendKeys(text);
 	}
-	
+
+//		public String getElementText(MobileElement e, String attribute) {
+//			waitForVisibilty(e);
+//			return e.get
+//		}
+
 	public String getAttribute(MobileElement e, String attribute) {
 		waitForVisibilty(e);
 		return e.getAttribute(attribute);
 	}
 
 	public String getText(MobileElement e) {
-		switch (getPlatform()) {
-		case "Android":
 			return getAttribute(e, "text");
-
-		case "ios":
-			return getAttribute(e, "label");
-		}
-		return null;
 	}
 
 	public MobileElement scrollToElement() {
