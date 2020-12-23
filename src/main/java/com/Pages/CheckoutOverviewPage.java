@@ -1,7 +1,7 @@
 package com.Pages;
 
 import com.BaseClass.TestBase;
-import com.utility.MobileBot;
+import com.utility.mobileBotUtility;
 
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.pagefactory.AndroidFindBy;
@@ -25,7 +25,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 		
 		public void clickFinishButton() throws InterruptedException {
 			Thread.sleep(2000);
-			MobileBot.scrollUpAndDown("up", driver);
+			mobileBotUtility.scrollUpAndDown("up", driver);
 			click(Finish);
 		}
 		

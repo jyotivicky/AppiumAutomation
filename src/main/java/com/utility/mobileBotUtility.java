@@ -32,7 +32,7 @@ import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.ElementOption;
 import io.appium.java_client.touch.offset.PointOption;
 
-    public class MobileBot {
+    public class mobileBotUtility {
 	public static AppiumDriver driver;
 	public static TimeUtils timeUtils;
 	
