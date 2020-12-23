@@ -7,16 +7,11 @@ import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
 import io.appium.java_client.pagefactory.AppiumFieldDecorator;
-import io.appium.java_client.remote.AndroidMobileCapabilityType;
-import io.appium.java_client.remote.MobileCapabilityType;
-
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import com.utility.TestUtility;
 import com.Report.TestReport;
 import com.aventstack.extentreports.Status;
-import com.sun.tools.classfile.StackMap_attribute.stack_map_frame;
-import com.utility.BrowserStackTest;
 import com.utility.GetAppiumStatus;
 import com.utility.TimeUtils;
 import org.apache.commons.codec.binary.Base64;
@@ -58,7 +53,7 @@ public class TestBase {
 	public static ThreadLocal<String> deviceName = new ThreadLocal<String>();
 
 	public TestBase() {
-		PageFactory.initElements(new AppiumFieldDecorator(driver, Duration.ofSeconds(20)), this);
+		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
 	}
 
 	public void setPlatform(String Platform) {
