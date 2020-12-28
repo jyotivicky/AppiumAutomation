@@ -183,6 +183,9 @@ public class TestBase {
 					cap.setCapability("avdLaunchTimeout", 120000);
 					cap.setCapability("appPackage", props.getProperty("Apppackage"));
 					cap.setCapability("appActivity", props.getProperty("Appactivity"));
+					
+					//'deviceorientation': 'LANDSCAPE'
+//					cap.setCapability("ScreenOrientation", "landscape");
 				}
 				if (emulator.equalsIgnoreCase("false")) {
 					
