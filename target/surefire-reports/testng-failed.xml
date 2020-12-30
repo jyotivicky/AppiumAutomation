@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="tests">
   <parameter name="emulator" value="true"/>
   <parameter name="platformVersion" value="9.0"/>
   <parameter name="platformName" value="Android"/>
-  <parameter name="udid" value="emulator-5554"/>
-  <parameter name="deviceName" value="Pixel_2"/>
+  <parameter name="udid" value="emulator-5556"/>
+  <parameter name="deviceName" value="Pixel_3"/>
   <listeners>
     <listener class-name="com.Listener.TestListner"/>
   </listeners>
@@ -16,7 +16,107 @@
     <parameter name="udid" value="emulator-5554"/>
     <parameter name="deviceName" value="Pixel_2"/>
     <classes>
+      <class name="com.TestCases.LoginTest"/>
       <class name="com.TestCases.ProductCheckOutTest"/>
+      <class name="com.TestCases.ProductInformationTest"/>
     </classes>
   </test> <!-- Mobile Automation Test on Pixel 2 -->
+  <test name="Mobile Automation Test on Pixel 3">
+    <parameter name="emulator" value="true"/>
+    <parameter name="platformVersion" value="9.0"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="udid" value="emulator-5556"/>
+    <parameter name="deviceName" value="Pixel_3"/>
+    <classes>
+      <class name="com.TestCases.LoginTest"/>
+      <class name="com.TestCases.ProductCheckOutTest"/>
+      <class name="com.TestCases.ProductInformationTest"/>
+    </classes>
+  </test> <!-- Mobile Automation Test on Pixel 3 -->
+  <test name="Mobile Automation Test on Pixel 2(failed)" parallel="tests">
+    <parameter name="emulator" value="true"/>
+    <parameter name="platformVersion" value="9.0"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="udid" value="emulator-5554"/>
+    <parameter name="deviceName" value="Pixel_2"/>
+    <classes>
+      <class name="com.TestCases.ProductCheckOutTest">
+        <methods>
+          <include name="validateAddToCart"/>
+          <include name="validateProductOrderSucess"/>
+          <include name="validateProductOnInformationPage"/>
+          <include name="validateProductOnCartPage"/>
+          <include name="jsonDataInitialaization"/>
+          <include name="jsonDataInitialaization"/>
+          <include name="validateProductOnOverviewPage"/>
+        </methods>
+      </class> <!-- com.TestCases.ProductCheckOutTest -->
+      <class name="com.TestCases.ProductInformationTest">
+        <methods>
+          <include name="validateProductsOnProductDetailsPage"/>
+          <include name="validateProductsOnProductPage"/>
+        </methods>
+      </class> <!-- com.TestCases.ProductInformationTest -->
+      <class name="com.TestCases.LoginTest">
+        <methods>
+          <include name="DriverInitializataion"/>
+          <include name="DriverInitializataion"/>
+          <include name="Initialaization"/>
+          <include name="Initialaization"/>
+          <include name="invalidPasswordTest"/>
+          <include name="stopVideoRecording"/>
+          <include name="stopVideoRecording"/>
+          <include name="startAppiumServer"/>
+          <include name="startVideoRecording"/>
+          <include name="startVideoRecording"/>
+          <include name="validUsernameTest"/>
+          <include name="jsonDataInitialaization"/>
+          <include name="jsonDataInitialaization"/>
+        </methods>
+      </class> <!-- com.TestCases.LoginTest -->
+    </classes>
+  </test> <!-- Mobile Automation Test on Pixel 2(failed) -->
+  <test name="Mobile Automation Test on Pixel 3(failed)" parallel="tests">
+    <parameter name="emulator" value="true"/>
+    <parameter name="platformVersion" value="9.0"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="udid" value="emulator-5556"/>
+    <parameter name="deviceName" value="Pixel_3"/>
+    <classes>
+      <class name="com.TestCases.ProductCheckOutTest">
+        <methods>
+          <include name="validateAddToCart"/>
+          <include name="validateProductOrderSucess"/>
+          <include name="validateProductOnInformationPage"/>
+          <include name="validateProductOnCartPage"/>
+          <include name="jsonDataInitialaization"/>
+          <include name="jsonDataInitialaization"/>
+          <include name="validateProductOnOverviewPage"/>
+        </methods>
+      </class> <!-- com.TestCases.ProductCheckOutTest -->
+      <class name="com.TestCases.ProductInformationTest">
+        <methods>
+          <include name="validateProductsOnProductDetailsPage"/>
+          <include name="validateProductsOnProductPage"/>
+        </methods>
+      </class> <!-- com.TestCases.ProductInformationTest -->
+      <class name="com.TestCases.LoginTest">
+        <methods>
+          <include name="DriverInitializataion"/>
+          <include name="DriverInitializataion"/>
+          <include name="Initialaization"/>
+          <include name="Initialaization"/>
+          <include name="invalidPasswordTest"/>
+          <include name="stopVideoRecording"/>
+          <include name="stopVideoRecording"/>
+          <include name="startAppiumServer"/>
+          <include name="startVideoRecording"/>
+          <include name="startVideoRecording"/>
+          <include name="validUsernameTest"/>
+          <include name="jsonDataInitialaization"/>
+          <include name="jsonDataInitialaization"/>
+        </methods>
+      </class> <!-- com.TestCases.LoginTest -->
+    </classes>
+  </test> <!-- Mobile Automation Test on Pixel 3(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,0 +1,93 @@
+# Created at 2020-12-30T10:17:34.693
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(Unknown Source)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Unknown Source)
+
+
+# Created at 2020-12-30T10:17:37.594
+Unexpected IOException with stream: 2020-12-30 10:17:37 INFO  LoginPage:23 - Login with : standard_user
+
+
+# Created at 2020-12-30T10:17:39.524
+Unexpected IOException with stream: 2020-12-30 10:17:39 INFO  LoginPage:31 - Login with : secret_sauce
+
+
+# Created at 2020-12-30T10:17:40.951
+Unexpected IOException: 5,1,com.TestCases.ProductInformationTest,validateProductsOnProductDetailsPage(com.TestCases.ProductInformationTest),regression,null,null
+
+
+# Created at 2020-12-30T10:18:01.620
+Unexpected IOException: 6,1,com.TestCases.ProductInformationTest,validateProductsOnProductDetailsPage(com.TestCases.ProductInformationTest),null,null,null
+
+
+# Created at 2020-12-30T10:18:12.502
+Unexpected IOException: 8,1,com.TestCases.ProductInformationTest,stopVideoRecording(com.TestCases.ProductInformationTest),null,Connection refused: connect\000ABuild info: version: '3.14.0'\002C revision: 'aacccce0'\002C time: '2018-08-02T20:19:58.91Z'\000ASystem info: host: 'VICKY'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_231'\000ADriver info: driver.version: AndroidDriver,null,Connection refused: connect\000ABuild info: version: '3.14.0'\002C revision: 'aacccce0'\002C time: '2018-08-02T20:19:58.91Z'\000ASystem info: host: 'VICKY'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_231'\000ADriver info: driver.version: AndroidDriver,ProductInformationTest>TestBase.stopVideoRecording:130 \00BB WebDriver Connection ...,org.openqa.selenium.WebDriverException: \000AConnection refused: connect\000ABuild info: version: '3.14.0'\002C revision: 'aacccce0'\002C time: '2018-08-02T20:19:58.91Z'\000ASystem info: host: 'VICKY'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_231'\000ADriver info: driver.version: AndroidDriver\000ACaused by: java.net.ConnectException: Connection refused: connect\000A
+
+
+# Created at 2020-12-30T10:18:12.505
+Unexpected IOException: 9,1,com.TestCases.LoginTest,startVideoRecording(com.TestCases.LoginTest),null,null,null
+
+
+# Created at 2020-12-30T10:18:12.507
+Unexpected IOException: 9,1,com.TestCases.LoginTest,Initialaization(com.TestCases.LoginTest),null,null,null
+
+
+# Created at 2020-12-30T10:18:12.509
+Unexpected IOException: 5,1,com.TestCases.LoginTest,validUsernameTest(com.TestCases.LoginTest),somke,null,null
+
+
+# Created at 2020-12-30T10:18:12.511
+Unexpected IOException: 9,1,com.TestCases.LoginTest,validUsernameTest(com.TestCases.LoginTest),null,null,null
+
+
+# Created at 2020-12-30T10:18:12.513
+Unexpected IOException: 9,1,com.TestCases.LoginTest,stopVideoRecording(com.TestCases.LoginTest),null,null,null
+
+
+# Created at 2020-12-30T10:18:12.516
+Unexpected IOException: 9,1,com.TestCases.ProductCheckOutTest,startVideoRecording(com.TestCases.ProductCheckOutTest),null,null,null
+
+
+# Created at 2020-12-30T10:18:12.517
+Unexpected IOException: 5,1,com.TestCases.ProductCheckOutTest,validateProductOnCartPage(com.TestCases.ProductCheckOutTest),regression,null,null
+
+
+# Created at 2020-12-30T10:18:12.519
+Unexpected IOException: 9,1,com.TestCases.ProductCheckOutTest,validateProductOnCartPage(com.TestCases.ProductCheckOutTest),null,null,null
+
+
+# Created at 2020-12-30T10:18:12.521
+Unexpected IOException: 9,1,com.TestCases.ProductCheckOutTest,stopVideoRecording(com.TestCases.ProductCheckOutTest),null,null,null
+
+
+# Created at 2020-12-30T10:18:12.524
+Unexpected IOException: 9,1,com.TestCases.ProductCheckOutTest,validateProductOnInformationPage(com.TestCases.ProductCheckOutTest),null,Method ProductCheckOutTest.validateProductOnInformationPage()[pri:0\002C instance:com.TestCases.ProductCheckOutTest@cb51256] depends on not successfully finished methods,null
+
+
+# Created at 2020-12-30T10:18:12.526
+Unexpected IOException: 9,1,com.TestCases.ProductCheckOutTest,validateProductOnOverviewPage(com.TestCases.ProductCheckOutTest),null,Method ProductCheckOutTest.validateProductOnOverviewPage()[pri:0\002C instance:com.TestCases.ProductCheckOutTest@cb51256] depends on not successfully finished methods,null
+
+
+# Created at 2020-12-30T10:18:12.528
+Unexpected IOException: 9,1,com.TestCases.ProductCheckOutTest,validateProductOrderSucess(com.TestCases.ProductCheckOutTest),null,Method ProductCheckOutTest.validateProductOrderSucess()[pri:0\002C instance:com.TestCases.ProductCheckOutTest@cb51256] depends on not successfully finished methods,null
+
+
+# Created at 2020-12-30T10:18:12.530
+Unexpected IOException: 9,1,com.TestCases.ProductCheckOutTest,logOutAndTearDown(com.TestCases.ProductCheckOutTest),null,null,null
+
+
+# Created at 2020-12-30T10:18:12.531
+Unexpected IOException: 9,1,com.TestCases.LoginTest,afterTest(com.TestCases.LoginTest),null,null,null
+
+
+# Created at 2020-12-30T10:18:12.815
+Unexpected IOException: 9,1,com.TestCases.LoginTest,stopAppiumServer(com.TestCases.LoginTest),null,null,null
+
+
+# Created at 2020-12-30T10:18:13.297
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGXmlTestSuite,TestSuite,null,null,null
+
+

@@ -151,9 +151,9 @@ public class TestBase {
 		}
 	}
 
-	@Parameters({"emulator", "platformName", "platformVersion", "deviceName"})
+	@Parameters({"udid","emulator", "platformName", "platformVersion", "deviceName"})
 	@BeforeTest
-	public void DriverInitializataion(String emulator, String platformName, String platformVersion, String deviceName) throws Exception {
+	public void DriverInitializataion(String udid,String emulator, String platformName, String platformVersion, String deviceName) throws Exception {
 		utility = new TestUtility();
 		dateTime = utility.dateTime();
 		setPlatform(platformName);
@@ -180,6 +180,7 @@ public class TestBase {
 				if (emulator.equalsIgnoreCase("true")) {
 					cap.setCapability("platformVersion", platformVersion);
 					cap.setCapability("deviceName", deviceName);
+					cap.setCapability("udid", udid);
 					cap.setCapability("avdLaunchTimeout", 120000);
 					cap.setCapability("appPackage", props.getProperty("Apppackage"));
 					cap.setCapability("appActivity", props.getProperty("Appactivity"));

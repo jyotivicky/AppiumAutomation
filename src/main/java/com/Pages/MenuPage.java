@@ -11,6 +11,7 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 	private MobileElement settingsBtn;
 
 	public SettingPage pressSettingsBtn() {
+		waitForVisibilty(settingsBtn);
 		click(settingsBtn);
 		return new SettingPage();
 	}

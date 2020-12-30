@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <parameter name="emulator" value="true"/>
   <parameter name="platformVersion" value="9.0"/>
   <parameter name="platformName" value="Android"/>
-  <parameter name="udid" value="emulator-5554"/>
-  <parameter name="deviceName" value="Pixel_2"/>
+  <parameter name="udid" value="emulator-5556"/>
+  <parameter name="deviceName" value="Pixel_3"/>
   <listeners>
     <listener class-name="com.Listener.TestListner"/>
   </listeners>
@@ -17,6 +17,20 @@
     <parameter name="deviceName" value="Pixel_2"/>
     <classes>
       <class name="com.TestCases.LoginTest"/>
+      <class name="com.TestCases.ProductCheckOutTest"/>
+      <class name="com.TestCases.ProductInformationTest"/>
     </classes>
   </test> <!-- Mobile Automation Test on Pixel 2 -->
+  <test name="Mobile Automation Test on Pixel 3">
+    <parameter name="emulator" value="true"/>
+    <parameter name="platformVersion" value="9.0"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="udid" value="emulator-5556"/>
+    <parameter name="deviceName" value="Pixel_3"/>
+    <classes>
+      <class name="com.TestCases.LoginTest"/>
+      <class name="com.TestCases.ProductCheckOutTest"/>
+      <class name="com.TestCases.ProductInformationTest"/>
+    </classes>
+  </test> <!-- Mobile Automation Test on Pixel 3 -->
 </suite> <!-- Failed suite [Suite] -->

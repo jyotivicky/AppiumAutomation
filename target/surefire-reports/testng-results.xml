@@ -1,45 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="18" failed="0" total="20" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="93240" started-at="2020-12-21T12:09:38Z" finished-at="2020-12-21T12:11:12Z">
+  <suite name="Suite" duration-ms="111984" started-at="2020-12-30T04:51:07Z" finished-at="2020-12-30T04:52:59Z">
     <groups>
+      <group name="somke">
+        <method signature="LoginTest.invalidPasswordTest()[pri:2, instance:com.TestCases.LoginTest@42f93a98]" name="invalidPasswordTest" class="com.TestCases.LoginTest"/>
+        <method signature="LoginTest.invalidUsernameTest()[pri:1, instance:com.TestCases.LoginTest@42f93a98]" name="invalidUsernameTest" class="com.TestCases.LoginTest"/>
+        <method signature="LoginTest.validUsernameTest()[pri:3, instance:com.TestCases.LoginTest@42f93a98]" name="validUsernameTest" class="com.TestCases.LoginTest"/>
+        <method signature="LoginTest.invalidPasswordTest()[pri:2, instance:com.TestCases.LoginTest@60285225]" name="invalidPasswordTest" class="com.TestCases.LoginTest"/>
+        <method signature="LoginTest.invalidUsernameTest()[pri:1, instance:com.TestCases.LoginTest@60285225]" name="invalidUsernameTest" class="com.TestCases.LoginTest"/>
+        <method signature="LoginTest.validUsernameTest()[pri:3, instance:com.TestCases.LoginTest@60285225]" name="validUsernameTest" class="com.TestCases.LoginTest"/>
+      </group> <!-- somke -->
       <group name="regression">
-        <method signature="ProductCheckOutTest.validateAddToCart()[pri:1, instance:com.TestCases.ProductCheckOutTest@6f195bc3]" name="validateAddToCart" class="com.TestCases.ProductCheckOutTest"/>
-        <method signature="ProductCheckOutTest.validateProductOnCartPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3]" name="validateProductOnCartPage" class="com.TestCases.ProductCheckOutTest"/>
-        <method signature="ProductCheckOutTest.validateProductOnInformationPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3]" name="validateProductOnInformationPage" class="com.TestCases.ProductCheckOutTest"/>
-        <method signature="ProductCheckOutTest.validateProductOnOverviewPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3]" name="validateProductOnOverviewPage" class="com.TestCases.ProductCheckOutTest"/>
+        <method signature="ProductCheckOutTest.validateAddToCart()[pri:1, instance:com.TestCases.ProductCheckOutTest@c46bcd4]" name="validateAddToCart" class="com.TestCases.ProductCheckOutTest"/>
+        <method signature="ProductCheckOutTest.validateProductOnCartPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@c46bcd4]" name="validateProductOnCartPage" class="com.TestCases.ProductCheckOutTest"/>
+        <method signature="ProductCheckOutTest.validateProductOnInformationPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@c46bcd4]" name="validateProductOnInformationPage" class="com.TestCases.ProductCheckOutTest"/>
+        <method signature="ProductCheckOutTest.validateProductOnOverviewPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@c46bcd4]" name="validateProductOnOverviewPage" class="com.TestCases.ProductCheckOutTest"/>
+        <method signature="ProductInformationTest.validateProductsOnProductDetailsPage()[pri:2, instance:com.TestCases.ProductInformationTest@36b4cef0]" name="validateProductsOnProductDetailsPage" class="com.TestCases.ProductInformationTest"/>
+        <method signature="ProductInformationTest.validateProductsOnProductPage()[pri:1, instance:com.TestCases.ProductInformationTest@36b4cef0]" name="validateProductsOnProductPage" class="com.TestCases.ProductInformationTest"/>
+        <method signature="ProductCheckOutTest.validateAddToCart()[pri:1, instance:com.TestCases.ProductCheckOutTest@7113b13f]" name="validateAddToCart" class="com.TestCases.ProductCheckOutTest"/>
+        <method signature="ProductCheckOutTest.validateProductOnCartPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@7113b13f]" name="validateProductOnCartPage" class="com.TestCases.ProductCheckOutTest"/>
+        <method signature="ProductCheckOutTest.validateProductOnInformationPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@7113b13f]" name="validateProductOnInformationPage" class="com.TestCases.ProductCheckOutTest"/>
+        <method signature="ProductCheckOutTest.validateProductOnOverviewPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@7113b13f]" name="validateProductOnOverviewPage" class="com.TestCases.ProductCheckOutTest"/>
+        <method signature="ProductInformationTest.validateProductsOnProductDetailsPage()[pri:2, instance:com.TestCases.ProductInformationTest@6043cd28]" name="validateProductsOnProductDetailsPage" class="com.TestCases.ProductInformationTest"/>
+        <method signature="ProductInformationTest.validateProductsOnProductPage()[pri:1, instance:com.TestCases.ProductInformationTest@6043cd28]" name="validateProductsOnProductPage" class="com.TestCases.ProductInformationTest"/>
       </group> <!-- regression -->
     </groups>
-    <test name="Mobile Automation Test on Pixel 2" duration-ms="93240" started-at="2020-12-21T12:09:38Z" finished-at="2020-12-21T12:11:12Z">
-      <class name="com.TestCases.ProductCheckOutTest">
-        <test-method status="PASS" signature="startAppiumServer()[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3]" name="startAppiumServer" is-config="true" duration-ms="3656" started-at="2020-12-21T17:39:35Z" finished-at="2020-12-21T17:39:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startAppiumServer -->
-        <test-method status="PASS" signature="DriverInitializataion(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3]" name="DriverInitializataion" is-config="true" duration-ms="29136" started-at="2020-12-21T17:39:38Z" finished-at="2020-12-21T17:40:07Z">
+    <test name="Mobile Automation Test on Pixel 2" duration-ms="111984" started-at="2020-12-30T04:51:07Z" finished-at="2020-12-30T04:52:59Z">
+      <class name="com.TestCases.LoginTest">
+        <test-method status="PASS" signature="DriverInitializataion(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.TestCases.LoginTest@42f93a98]" name="DriverInitializataion" is-config="true" duration-ms="47840" started-at="2020-12-30T10:21:07Z" finished-at="2020-12-30T10:21:55Z">
           <params>
             <param index="0">
-              <value>
-                <![CDATA[emulator-5554]]>
-              </value>
-            </param>
-            <param index="1">
               <value>
                 <![CDATA[true]]>
               </value>
             </param>
-            <param index="2">
+            <param index="1">
               <value>
                 <![CDATA[Android]]>
               </value>
             </param>
-            <param index="3">
+            <param index="2">
               <value>
                 <![CDATA[9.0]]>
               </value>
             </param>
-            <param index="4">
+            <param index="3">
               <value>
                 <![CDATA[Pixel_2]]>
               </value>
@@ -48,118 +55,680 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DriverInitializataion -->
-        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3]" name="beforeClass" is-config="true" duration-ms="16202" started-at="2020-12-21T17:40:07Z" finished-at="2020-12-21T17:40:24Z">
+        <test-method status="PASS" signature="jsonDataInitialaization()[pri:0, instance:com.TestCases.LoginTest@42f93a98]" name="jsonDataInitialaization" is-config="true" duration-ms="9501" started-at="2020-12-30T10:21:55Z" finished-at="2020-12-30T10:22:05Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="startVideoRecording()[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3]" name="startVideoRecording" is-config="true" duration-ms="1898" started-at="2020-12-21T17:40:24Z" finished-at="2020-12-21T17:40:26Z">
+        </test-method> <!-- jsonDataInitialaization -->
+        <test-method status="PASS" signature="startVideoRecording()[pri:0, instance:com.TestCases.LoginTest@42f93a98]" name="startVideoRecording" is-config="true" duration-ms="3987" started-at="2020-12-30T10:22:05Z" finished-at="2020-12-30T10:22:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startVideoRecording -->
-        <test-method status="PASS" signature="validateAddToCart()[pri:1, instance:com.TestCases.ProductCheckOutTest@6f195bc3]" name="validateAddToCart" duration-ms="7533" started-at="2020-12-21T17:40:26Z" finished-at="2020-12-21T17:40:33Z">
+        <test-method status="PASS" signature="Initialaization()[pri:0, instance:com.TestCases.LoginTest@42f93a98]" name="Initialaization" is-config="true" duration-ms="14" started-at="2020-12-30T10:22:09Z" finished-at="2020-12-30T10:22:09Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateAddToCart -->
-        <test-method status="PASS" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3]" name="stopVideoRecording" is-config="true" duration-ms="2276" started-at="2020-12-21T17:40:33Z" finished-at="2020-12-21T17:40:35Z">
+        </test-method> <!-- Initialaization -->
+        <test-method status="PASS" signature="invalidUsernameTest()[pri:1, instance:com.TestCases.LoginTest@42f93a98]" name="invalidUsernameTest" duration-ms="14475" started-at="2020-12-30T10:22:09Z" finished-at="2020-12-30T10:22:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUsernameTest -->
+        <test-method status="PASS" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.LoginTest@42f93a98]" name="stopVideoRecording" is-config="true" duration-ms="3215" started-at="2020-12-30T10:22:23Z" finished-at="2020-12-30T10:22:27Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validateAddToCart status=SUCCESS method=ProductCheckOutTest.validateAddToCart()[pri:1, instance:com.TestCases.ProductCheckOutTest@6f195bc3] output={null}]]]>
+                <![CDATA[[TestResult name=invalidUsernameTest status=SUCCESS method=LoginTest.invalidUsernameTest()[pri:1, instance:com.TestCases.LoginTest@42f93a98] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopVideoRecording -->
-        <test-method status="PASS" signature="startVideoRecording()[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3]" name="startVideoRecording" is-config="true" duration-ms="1751" started-at="2020-12-21T17:40:35Z" finished-at="2020-12-21T17:40:37Z">
+        <test-method status="SKIP" signature="startVideoRecording()[pri:0, instance:com.TestCases.LoginTest@42f93a98]" name="startVideoRecording" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startVideoRecording -->
-        <test-method status="PASS" signature="validateProductOnCartPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3]" name="validateProductOnCartPage" duration-ms="1108" started-at="2020-12-21T17:40:37Z" depends-on-methods="com.TestCases.ProductCheckOutTest.validateAddToCart" finished-at="2020-12-21T17:40:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateProductOnCartPage -->
-        <test-method status="PASS" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3]" name="stopVideoRecording" is-config="true" duration-ms="1507" started-at="2020-12-21T17:40:38Z" finished-at="2020-12-21T17:40:40Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateProductOnCartPage status=SUCCESS method=ProductCheckOutTest.validateProductOnCartPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        <test-method status="SKIP" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.LoginTest@42f93a98]" name="stopVideoRecording" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopVideoRecording -->
-        <test-method status="PASS" signature="startVideoRecording()[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3]" name="startVideoRecording" is-config="true" duration-ms="967" started-at="2020-12-21T17:40:40Z" finished-at="2020-12-21T17:40:41Z">
+        <test-method status="SKIP" signature="invalidPasswordTest()[pri:2, instance:com.TestCases.LoginTest@42f93a98]" name="invalidPasswordTest" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPasswordTest -->
+        <test-method status="SKIP" signature="Initialaization()[pri:0, instance:com.TestCases.LoginTest@42f93a98]" name="Initialaization" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Initialaization -->
+        <test-method status="SKIP" signature="Initialaization()[pri:0, instance:com.TestCases.LoginTest@42f93a98]" name="Initialaization" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Initialaization -->
+        <test-method status="SKIP" signature="startVideoRecording()[pri:0, instance:com.TestCases.LoginTest@42f93a98]" name="startVideoRecording" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startVideoRecording -->
-        <test-method status="PASS" signature="validateProductOnInformationPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3]" name="validateProductOnInformationPage" duration-ms="5399" started-at="2020-12-21T17:40:41Z" depends-on-methods="com.TestCases.ProductCheckOutTest.validateProductOnCartPage" finished-at="2020-12-21T17:40:46Z">
+        <test-method status="SKIP" signature="validUsernameTest()[pri:3, instance:com.TestCases.LoginTest@42f93a98]" name="validUsernameTest" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validateProductOnInformationPage -->
-        <test-method status="PASS" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3]" name="stopVideoRecording" is-config="true" duration-ms="1694" started-at="2020-12-21T17:40:46Z" finished-at="2020-12-21T17:40:48Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateProductOnInformationPage status=SUCCESS method=ProductCheckOutTest.validateProductOnInformationPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3] output={null}]]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- validUsernameTest -->
+        <test-method status="SKIP" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.LoginTest@42f93a98]" name="stopVideoRecording" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopVideoRecording -->
-        <test-method status="PASS" signature="startVideoRecording()[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3]" name="startVideoRecording" is-config="true" duration-ms="1652" started-at="2020-12-21T17:40:48Z" finished-at="2020-12-21T17:40:49Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startVideoRecording -->
-        <test-method status="PASS" signature="validateProductOnOverviewPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3]" name="validateProductOnOverviewPage" duration-ms="6456" started-at="2020-12-21T17:40:49Z" depends-on-methods="com.TestCases.ProductCheckOutTest.validateProductOnInformationPage" finished-at="2020-12-21T17:40:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateProductOnOverviewPage -->
-        <test-method status="PASS" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3]" name="stopVideoRecording" is-config="true" duration-ms="2881" started-at="2020-12-21T17:40:56Z" finished-at="2020-12-21T17:40:59Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateProductOnOverviewPage status=SUCCESS method=ProductCheckOutTest.validateProductOnOverviewPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopVideoRecording -->
-        <test-method status="PASS" signature="startVideoRecording()[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3]" name="startVideoRecording" is-config="true" duration-ms="1452" started-at="2020-12-21T17:40:59Z" finished-at="2020-12-21T17:41:00Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startVideoRecording -->
-        <test-method status="PASS" signature="validateProductOrderSucess()[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3]" name="validateProductOrderSucess" duration-ms="1886" started-at="2020-12-21T17:41:00Z" depends-on-methods="com.TestCases.ProductCheckOutTest.validateProductOnOverviewPage" finished-at="2020-12-21T17:41:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateProductOrderSucess -->
-        <test-method status="PASS" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3]" name="stopVideoRecording" is-config="true" duration-ms="2770" started-at="2020-12-21T17:41:02Z" finished-at="2020-12-21T17:41:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=validateProductOrderSucess status=SUCCESS method=ProductCheckOutTest.validateProductOrderSucess()[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- stopVideoRecording -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3]" name="afterClass" is-config="true" duration-ms="3052" started-at="2020-12-21T17:41:05Z" finished-at="2020-12-21T17:41:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3]" name="afterTest" is-config="true" duration-ms="3571" started-at="2020-12-21T17:41:08Z" finished-at="2020-12-21T17:41:12Z">
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:com.TestCases.LoginTest@42f93a98]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="stopAppiumServer()[pri:0, instance:com.TestCases.ProductCheckOutTest@6f195bc3]" name="stopAppiumServer" is-config="true" duration-ms="1" started-at="2020-12-21T17:41:16Z" finished-at="2020-12-21T17:41:16Z">
+      </class> <!-- com.TestCases.LoginTest -->
+      <class name="com.TestCases.ProductCheckOutTest">
+        <test-method status="FAIL" signature="jsonDataInitialaization()[pri:0, instance:com.TestCases.ProductCheckOutTest@c46bcd4]" name="jsonDataInitialaization" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:27Z" finished-at="2020-12-30T10:22:27Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'VICKY', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, avdLaunchTimeout: 120000, databaseEnabled: false, desired: {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, avdLaunchTimeout: 120000, deviceName: Pixel_2, platformName: android, platformVersion: 9.0}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: AOSP on IA Emulator, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: f6ab2a3d-c17e-46ab-b0af-c0fcfdb80aaf]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'VICKY', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, avdLaunchTimeout: 120000, databaseEnabled: false, desired: {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, avdLaunchTimeout: 120000, deviceName: Pixel_2, platformName: android, platformVersion: 9.0}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: AOSP on IA Emulator, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: f6ab2a3d-c17e-46ab-b0af-c0fcfdb80aaf
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at io.appium.java_client.DefaultGenericMobileElement.execute(DefaultGenericMobileElement.java:45)
+	at io.appium.java_client.MobileElement.execute(MobileElement.java:1)
+	at io.appium.java_client.android.AndroidElement.execute(AndroidElement.java:1)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at io.appium.java_client.pagefactory.ElementInterceptor.getObject(ElementInterceptor.java:40)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:60)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.clear(<generated>)
+	at com.BaseClass.TestBase.clear(TestBase.java:240)
+	at com.Pages.LoginPage.enterUsername(LoginPage.java:22)
+	at com.Pages.LoginPage.userLogin(LoginPage.java:44)
+	at com.TestCases.ProductCheckOutTest.jsonDataInitialaization(ProductCheckOutTest.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsonDataInitialaization -->
+        <test-method status="SKIP" signature="validateAddToCart()[pri:1, instance:com.TestCases.ProductCheckOutTest@c46bcd4]" name="validateAddToCart" duration-ms="1" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddToCart -->
+        <test-method status="SKIP" signature="startVideoRecording()[pri:0, instance:com.TestCases.ProductCheckOutTest@c46bcd4]" name="startVideoRecording" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startVideoRecording -->
+        <test-method status="SKIP" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.ProductCheckOutTest@c46bcd4]" name="stopVideoRecording" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopVideoRecording -->
+        <test-method status="SKIP" signature="validateProductOnInformationPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@c46bcd4]" name="validateProductOnInformationPage" duration-ms="0" started-at="2020-12-30T10:22:59Z" depends-on-methods="com.TestCases.ProductCheckOutTest.validateProductOnCartPage" finished-at="2020-12-30T10:22:59Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ProductCheckOutTest.validateProductOnInformationPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@c46bcd4] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ProductCheckOutTest.validateProductOnInformationPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@c46bcd4] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductOnInformationPage -->
+        <test-method status="SKIP" signature="validateProductOnCartPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@c46bcd4]" name="validateProductOnCartPage" duration-ms="0" started-at="2020-12-30T10:22:59Z" depends-on-methods="com.TestCases.ProductCheckOutTest.validateAddToCart" finished-at="2020-12-30T10:22:59Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ProductCheckOutTest.validateProductOnCartPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@c46bcd4] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ProductCheckOutTest.validateProductOnCartPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@c46bcd4] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductOnCartPage -->
+        <test-method status="SKIP" signature="logOutAndTearDown()[pri:0, instance:com.TestCases.ProductCheckOutTest@c46bcd4]" name="logOutAndTearDown" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutAndTearDown -->
+        <test-method status="SKIP" signature="validateProductOnOverviewPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@c46bcd4]" name="validateProductOnOverviewPage" duration-ms="0" started-at="2020-12-30T10:22:59Z" depends-on-methods="com.TestCases.ProductCheckOutTest.validateProductOnInformationPage" finished-at="2020-12-30T10:22:59Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ProductCheckOutTest.validateProductOnOverviewPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@c46bcd4] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ProductCheckOutTest.validateProductOnOverviewPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@c46bcd4] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductOnOverviewPage -->
+        <test-method status="SKIP" signature="validateProductOrderSucess()[pri:0, instance:com.TestCases.ProductCheckOutTest@c46bcd4]" name="validateProductOrderSucess" duration-ms="0" started-at="2020-12-30T10:22:59Z" depends-on-methods="com.TestCases.ProductCheckOutTest.validateProductOnOverviewPage" finished-at="2020-12-30T10:22:59Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ProductCheckOutTest.validateProductOrderSucess()[pri:0, instance:com.TestCases.ProductCheckOutTest@c46bcd4] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ProductCheckOutTest.validateProductOrderSucess()[pri:0, instance:com.TestCases.ProductCheckOutTest@c46bcd4] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductOrderSucess -->
+      </class> <!-- com.TestCases.ProductCheckOutTest -->
+      <class name="com.TestCases.ProductInformationTest">
+        <test-method status="SKIP" signature="beforeClass()[pri:0, instance:com.TestCases.ProductInformationTest@36b4cef0]" name="beforeClass" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="SKIP" signature="validateProductsOnProductPage()[pri:1, instance:com.TestCases.ProductInformationTest@36b4cef0]" name="validateProductsOnProductPage" duration-ms="1" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductsOnProductPage -->
+        <test-method status="SKIP" signature="startVideoRecording()[pri:0, instance:com.TestCases.ProductInformationTest@36b4cef0]" name="startVideoRecording" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startVideoRecording -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.TestCases.ProductInformationTest@36b4cef0]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.ProductInformationTest@36b4cef0]" name="stopVideoRecording" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopVideoRecording -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.TestCases.ProductInformationTest@36b4cef0]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="startVideoRecording()[pri:0, instance:com.TestCases.ProductInformationTest@36b4cef0]" name="startVideoRecording" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startVideoRecording -->
+        <test-method status="SKIP" signature="validateProductsOnProductDetailsPage()[pri:2, instance:com.TestCases.ProductInformationTest@36b4cef0]" name="validateProductsOnProductDetailsPage" duration-ms="1" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductsOnProductDetailsPage -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.TestCases.ProductInformationTest@36b4cef0]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.ProductInformationTest@36b4cef0]" name="stopVideoRecording" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopVideoRecording -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.TestCases.ProductInformationTest@36b4cef0]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.TestCases.ProductInformationTest -->
+    </test> <!-- Mobile Automation Test on Pixel 2 -->
+    <test name="Mobile Automation Test on Pixel 3" duration-ms="111971" started-at="2020-12-30T04:51:07Z" finished-at="2020-12-30T04:52:59Z">
+      <class name="com.TestCases.LoginTest">
+        <test-method status="PASS" signature="startAppiumServer()[pri:0, instance:com.TestCases.LoginTest@60285225]" name="startAppiumServer" is-config="true" duration-ms="3646" started-at="2020-12-30T10:21:04Z" finished-at="2020-12-30T10:21:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startAppiumServer -->
+        <test-method status="PASS" signature="DriverInitializataion(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.TestCases.LoginTest@60285225]" name="DriverInitializataion" is-config="true" duration-ms="36133" started-at="2020-12-30T10:21:07Z" finished-at="2020-12-30T10:21:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Android]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[9.0]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Pixel_3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DriverInitializataion -->
+        <test-method status="PASS" signature="jsonDataInitialaization()[pri:0, instance:com.TestCases.LoginTest@60285225]" name="jsonDataInitialaization" is-config="true" duration-ms="11319" started-at="2020-12-30T10:21:44Z" finished-at="2020-12-30T10:21:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsonDataInitialaization -->
+        <test-method status="PASS" signature="startVideoRecording()[pri:0, instance:com.TestCases.LoginTest@60285225]" name="startVideoRecording" is-config="true" duration-ms="4143" started-at="2020-12-30T10:21:55Z" finished-at="2020-12-30T10:21:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startVideoRecording -->
+        <test-method status="PASS" signature="Initialaization()[pri:0, instance:com.TestCases.LoginTest@60285225]" name="Initialaization" is-config="true" duration-ms="972" started-at="2020-12-30T10:21:59Z" finished-at="2020-12-30T10:22:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Initialaization -->
+        <test-method status="PASS" signature="invalidUsernameTest()[pri:1, instance:com.TestCases.LoginTest@60285225]" name="invalidUsernameTest" duration-ms="23165" started-at="2020-12-30T10:22:00Z" finished-at="2020-12-30T10:22:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidUsernameTest -->
+        <test-method status="PASS" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.LoginTest@60285225]" name="stopVideoRecording" is-config="true" duration-ms="3041" started-at="2020-12-30T10:22:23Z" finished-at="2020-12-30T10:22:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invalidUsernameTest status=SUCCESS method=LoginTest.invalidUsernameTest()[pri:1, instance:com.TestCases.LoginTest@60285225] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopVideoRecording -->
+        <test-method status="SKIP" signature="invalidPasswordTest()[pri:2, instance:com.TestCases.LoginTest@60285225]" name="invalidPasswordTest" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invalidPasswordTest -->
+        <test-method status="SKIP" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.LoginTest@60285225]" name="stopVideoRecording" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopVideoRecording -->
+        <test-method status="SKIP" signature="Initialaization()[pri:0, instance:com.TestCases.LoginTest@60285225]" name="Initialaization" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Initialaization -->
+        <test-method status="SKIP" signature="startVideoRecording()[pri:0, instance:com.TestCases.LoginTest@60285225]" name="startVideoRecording" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startVideoRecording -->
+        <test-method status="SKIP" signature="startVideoRecording()[pri:0, instance:com.TestCases.LoginTest@60285225]" name="startVideoRecording" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startVideoRecording -->
+        <test-method status="SKIP" signature="Initialaization()[pri:0, instance:com.TestCases.LoginTest@60285225]" name="Initialaization" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Initialaization -->
+        <test-method status="SKIP" signature="validUsernameTest()[pri:3, instance:com.TestCases.LoginTest@60285225]" name="validUsernameTest" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validUsernameTest -->
+        <test-method status="SKIP" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.LoginTest@60285225]" name="stopVideoRecording" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopVideoRecording -->
+        <test-method status="SKIP" signature="afterTest()[pri:0, instance:com.TestCases.LoginTest@60285225]" name="afterTest" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="SKIP" signature="stopAppiumServer()[pri:0, instance:com.TestCases.LoginTest@60285225]" name="stopAppiumServer" is-config="true" duration-ms="0" started-at="2020-12-30T10:23:02Z" finished-at="2020-12-30T10:23:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stopAppiumServer -->
+      </class> <!-- com.TestCases.LoginTest -->
+      <class name="com.TestCases.ProductInformationTest">
+        <test-method status="SKIP" signature="beforeClass()[pri:0, instance:com.TestCases.ProductInformationTest@6043cd28]" name="beforeClass" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.TestCases.ProductInformationTest@6043cd28]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="SKIP" signature="startVideoRecording()[pri:0, instance:com.TestCases.ProductInformationTest@6043cd28]" name="startVideoRecording" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startVideoRecording -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.TestCases.ProductInformationTest@6043cd28]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="validateProductsOnProductPage()[pri:1, instance:com.TestCases.ProductInformationTest@6043cd28]" name="validateProductsOnProductPage" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductsOnProductPage -->
+        <test-method status="SKIP" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.ProductInformationTest@6043cd28]" name="stopVideoRecording" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopVideoRecording -->
+        <test-method status="SKIP" signature="beforeMethod()[pri:0, instance:com.TestCases.ProductInformationTest@6043cd28]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="SKIP" signature="validateProductsOnProductDetailsPage()[pri:2, instance:com.TestCases.ProductInformationTest@6043cd28]" name="validateProductsOnProductDetailsPage" duration-ms="1" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductsOnProductDetailsPage -->
+        <test-method status="SKIP" signature="startVideoRecording()[pri:0, instance:com.TestCases.ProductInformationTest@6043cd28]" name="startVideoRecording" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startVideoRecording -->
+        <test-method status="SKIP" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.ProductInformationTest@6043cd28]" name="stopVideoRecording" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopVideoRecording -->
+        <test-method status="SKIP" signature="afterMethod()[pri:0, instance:com.TestCases.ProductInformationTest@6043cd28]" name="afterMethod" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.TestCases.ProductInformationTest -->
+      <class name="com.TestCases.ProductCheckOutTest">
+        <test-method status="FAIL" signature="jsonDataInitialaization()[pri:0, instance:com.TestCases.ProductCheckOutTest@7113b13f]" name="jsonDataInitialaization" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:26Z" finished-at="2020-12-30T10:22:26Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'VICKY', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, avdLaunchTimeout: 120000, databaseEnabled: false, desired: {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, avdLaunchTimeout: 120000, deviceName: Pixel_2, platformName: android, platformVersion: 9.0}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: AOSP on IA Emulator, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: f6ab2a3d-c17e-46ab-b0af-c0fcfdb80aaf
+*** Element info: {Using=accessibility id, value=test-Username}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'VICKY', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, avdLaunchTimeout: 120000, databaseEnabled: false, desired: {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, avdLaunchTimeout: 120000, deviceName: Pixel_2, platformName: android, platformVersion: 9.0}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: AOSP on IA Emulator, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: f6ab2a3d-c17e-46ab-b0af-c0fcfdb80aaf
+*** Element info: {Using=accessibility id, value=test-Username}
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:192)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
+	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
+	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$c0b591f0.clear(<generated>)
+	at com.BaseClass.TestBase.clear(TestBase.java:240)
+	at com.Pages.LoginPage.enterUsername(LoginPage.java:22)
+	at com.Pages.LoginPage.userLogin(LoginPage.java:44)
+	at com.TestCases.ProductCheckOutTest.jsonDataInitialaization(ProductCheckOutTest.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'VICKY', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, avdLaunchTimeout: 120000, databaseEnabled: false, desired: {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, avdLaunchTimeout: 120000, deviceName: Pixel_2, platformName: android, platformVersion: 9.0}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: AOSP on IA Emulator, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: f6ab2a3d-c17e-46ab-b0af-c0fcfdb80aaf
+*** Element info: {Using=accessibility id, value=test-Username}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.FindsByAccessibilityId.findElementByAccessibilityId(FindsByAccessibilityId.java:37)
+	at io.appium.java_client.MobileBy$ByAccessibilityId.findElement(MobileBy.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.lambda$0(ByChained.java:38)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:72)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
+	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
+	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
+	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
+	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
+	... 30 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- jsonDataInitialaization -->
+        <test-method status="SKIP" signature="validateAddToCart()[pri:1, instance:com.TestCases.ProductCheckOutTest@7113b13f]" name="validateAddToCart" duration-ms="12" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddToCart -->
+        <test-method status="SKIP" signature="startVideoRecording()[pri:0, instance:com.TestCases.ProductCheckOutTest@7113b13f]" name="startVideoRecording" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startVideoRecording -->
+        <test-method status="SKIP" signature="stopVideoRecording(org.testng.ITestResult)[pri:0, instance:com.TestCases.ProductCheckOutTest@7113b13f]" name="stopVideoRecording" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopVideoRecording -->
+        <test-method status="SKIP" signature="validateProductOnInformationPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@7113b13f]" name="validateProductOnInformationPage" duration-ms="0" started-at="2020-12-30T10:22:59Z" depends-on-methods="com.TestCases.ProductCheckOutTest.validateProductOnCartPage" finished-at="2020-12-30T10:22:59Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ProductCheckOutTest.validateProductOnInformationPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@7113b13f] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ProductCheckOutTest.validateProductOnInformationPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@7113b13f] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductOnInformationPage -->
+        <test-method status="SKIP" signature="validateProductOnCartPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@7113b13f]" name="validateProductOnCartPage" duration-ms="0" started-at="2020-12-30T10:22:59Z" depends-on-methods="com.TestCases.ProductCheckOutTest.validateAddToCart" finished-at="2020-12-30T10:22:59Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ProductCheckOutTest.validateProductOnCartPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@7113b13f] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ProductCheckOutTest.validateProductOnCartPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@7113b13f] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductOnCartPage -->
+        <test-method status="SKIP" signature="validateProductOnOverviewPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@7113b13f]" name="validateProductOnOverviewPage" duration-ms="0" started-at="2020-12-30T10:22:59Z" depends-on-methods="com.TestCases.ProductCheckOutTest.validateProductOnInformationPage" finished-at="2020-12-30T10:22:59Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ProductCheckOutTest.validateProductOnOverviewPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@7113b13f] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ProductCheckOutTest.validateProductOnOverviewPage()[pri:0, instance:com.TestCases.ProductCheckOutTest@7113b13f] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductOnOverviewPage -->
+        <test-method status="SKIP" signature="validateProductOrderSucess()[pri:0, instance:com.TestCases.ProductCheckOutTest@7113b13f]" name="validateProductOrderSucess" duration-ms="0" started-at="2020-12-30T10:22:59Z" depends-on-methods="com.TestCases.ProductCheckOutTest.validateProductOnOverviewPage" finished-at="2020-12-30T10:22:59Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method ProductCheckOutTest.validateProductOrderSucess()[pri:0, instance:com.TestCases.ProductCheckOutTest@7113b13f] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method ProductCheckOutTest.validateProductOrderSucess()[pri:0, instance:com.TestCases.ProductCheckOutTest@7113b13f] depends on not successfully finished methods
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1037)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateProductOrderSucess -->
+        <test-method status="SKIP" signature="logOutAndTearDown()[pri:0, instance:com.TestCases.ProductCheckOutTest@7113b13f]" name="logOutAndTearDown" is-config="true" duration-ms="0" started-at="2020-12-30T10:22:59Z" finished-at="2020-12-30T10:22:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logOutAndTearDown -->
       </class> <!-- com.TestCases.ProductCheckOutTest -->
-    </test> <!-- Mobile Automation Test on Pixel 2 -->
+    </test> <!-- Mobile Automation Test on Pixel 3 -->
   </suite> <!-- Suite -->
 </testng-results>

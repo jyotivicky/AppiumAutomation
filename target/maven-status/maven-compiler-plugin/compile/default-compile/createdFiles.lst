@@ -2,9 +2,9 @@ com\Pages\ProductPage.class
 com\Pages\ProductDetailsPage.class
 com\Pages\SettingPage.class
 com\BaseClass\TestBase.class
-com\Listener\TestListner.class
-com\Pages\MenuPage.class
 com\utility\ReadConfig.class
 com\Report\TestReport.class
+com\Listener\TestListner.class
 com\utility\TestUtility.class
 com\Pages\LoginPage.class
+com\Pages\MenuPage.class

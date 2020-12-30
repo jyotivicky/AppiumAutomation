@@ -1,4 +1,34 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 104.918 s - in TestSuite
+Tests run: 61, Failures: 2, Errors: 0, Skipped: 57, Time elapsed: 123.006 s <<< FAILURE! - in TestSuite
+jsonDataInitialaization(com.TestCases.ProductCheckOutTest)  Time elapsed: 50.627 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'VICKY', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, avdLaunchTimeout: 120000, databaseEnabled: false, desired: {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, avdLaunchTimeout: 120000, deviceName: Pixel_2, platformName: android, platformVersion: 9.0}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: AOSP on IA Emulator, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: f6ab2a3d-c17e-46ab-b0af-c0fcfdb80aaf
+	at com.TestCases.ProductCheckOutTest.jsonDataInitialaization(ProductCheckOutTest.java:59)
+
+jsonDataInitialaization(com.TestCases.ProductCheckOutTest)  Time elapsed: 50.628 s  <<< FAILURE!
+org.openqa.selenium.WebDriverException: 
+org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'VICKY', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, avdLaunchTimeout: 120000, databaseEnabled: false, desired: {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, avdLaunchTimeout: 120000, deviceName: Pixel_2, platformName: android, platformVersion: 9.0}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: AOSP on IA Emulator, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: f6ab2a3d-c17e-46ab-b0af-c0fcfdb80aaf
+*** Element info: {Using=accessibility id, value=test-Username}
+	at com.TestCases.ProductCheckOutTest.jsonDataInitialaization(ProductCheckOutTest.java:59)
+Caused by: org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: Could not proxy command to remote server. Original error: Error: socket hang up
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'VICKY', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, avdLaunchTimeout: 120000, databaseEnabled: false, desired: {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, avdLaunchTimeout: 120000, deviceName: Pixel_2, platformName: android, platformVersion: 9.0}, deviceApiLevel: 28, deviceManufacturer: Google, deviceModel: AOSP on IA Emulator, deviceName: emulator-5554, deviceScreenDensity: 420, deviceScreenSize: 1080x1920, deviceUDID: emulator-5554, javascriptEnabled: true, locationContextEnabled: false, networkConnectionEnabled: true, pixelRatio: 2.625, platform: LINUX, platformName: Android, platformVersion: 9, statBarHeight: 63, takesScreenshot: true, viewportRect: {height: 1731, left: 0, top: 63, width: 1080}, warnings: {}, webStorageEnabled: false}
+Session ID: f6ab2a3d-c17e-46ab-b0af-c0fcfdb80aaf
+*** Element info: {Using=accessibility id, value=test-Username}
+	at com.TestCases.ProductCheckOutTest.jsonDataInitialaization(ProductCheckOutTest.java:59)
+

@@ -1,0 +1,618 @@
+# Created at 2020-12-30T10:20:33.415
+TestSet has not finished before stream error has appeared >> initializing exit by non-null configuration: DEFAULT
+java.io.EOFException
+	at java.io.DataInputStream.readInt(Unknown Source)
+	at org.apache.maven.surefire.booter.MasterProcessCommand.decode(MasterProcessCommand.java:115)
+	at org.apache.maven.surefire.booter.CommandReader$CommandRunnable.run(CommandReader.java:391)
+	at java.lang.Thread.run(Unknown Source)
+
+
+# Created at 2020-12-30T10:20:37.872
+Unexpected IOException with stream: org.openqa.selenium.SessionNotCreatedException: Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized within 30000ms timeout. Make sure the application under test does not crash and investigate the logcat output. You could also try to increase the value of 'uiautomator2ServerLaunchTimeout' capability. 
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'VICKY', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized within 30000ms timeout. Make sure the application under test does not crash and investigate the logcat output. You could also try to increase the value of 'uiautomator2ServerLaunchTimeout' capability. 
+    at getResponseForW3CError (C:\Users\hp\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\hp\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:388:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'VICKY', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+
+# Created at 2020-12-30T10:20:37.874
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.875
+Unexpected IOException with stream: 	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:208)
+
+# Created at 2020-12-30T10:20:37.877
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.878
+Unexpected IOException with stream: 	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+
+# Created at 2020-12-30T10:20:37.879
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.881
+Unexpected IOException with stream: 	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+
+# Created at 2020-12-30T10:20:37.882
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.884
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+
+# Created at 2020-12-30T10:20:37.885
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.886
+Unexpected IOException with stream: 	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
+
+# Created at 2020-12-30T10:20:37.888
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.889
+Unexpected IOException with stream: 	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+
+# Created at 2020-12-30T10:20:37.890
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.892
+Unexpected IOException with stream: 	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+
+# Created at 2020-12-30T10:20:37.893
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.894
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+
+# Created at 2020-12-30T10:20:37.896
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.897
+Unexpected IOException with stream: 	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:336)
+
+# Created at 2020-12-30T10:20:37.898
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.899
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:130)
+
+# Created at 2020-12-30T10:20:37.900
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.902
+Unexpected IOException with stream: 	at io.appium.java_client.DefaultGenericMobileDriver.<init>(DefaultGenericMobileDriver.java:37)
+
+# Created at 2020-12-30T10:20:37.903
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.904
+Unexpected IOException with stream: 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:88)
+
+# Created at 2020-12-30T10:20:37.906
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.907
+Unexpected IOException with stream: 	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:98)
+
+# Created at 2020-12-30T10:20:37.908
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.910
+Unexpected IOException with stream: 	at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:94)
+
+# Created at 2020-12-30T10:20:37.911
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.912
+Unexpected IOException with stream: 	at com.BaseClass.TestBase.DriverInitializataion(TestBase.java:209)
+
+# Created at 2020-12-30T10:20:37.913
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.915
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created at 2020-12-30T10:20:37.916
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.917
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+
+# Created at 2020-12-30T10:20:37.919
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.920
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+
+# Created at 2020-12-30T10:20:37.921
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.922
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Unknown Source)
+
+# Created at 2020-12-30T10:20:37.924
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.926
+Unexpected IOException with stream: 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+
+# Created at 2020-12-30T10:20:37.927
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.928
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+
+# Created at 2020-12-30T10:20:37.930
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.931
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+
+# Created at 2020-12-30T10:20:37.934
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.936
+Unexpected IOException with stream: 	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+
+# Created at 2020-12-30T10:20:37.937
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.939
+Unexpected IOException with stream: 	at org.testng.TestRunner.beforeRun(TestRunner.java:656)
+
+# Created at 2020-12-30T10:20:37.940
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.944
+Unexpected IOException with stream: 	at org.testng.TestRunner.run(TestRunner.java:624)
+
+# Created at 2020-12-30T10:20:37.946
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.947
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+
+# Created at 2020-12-30T10:20:37.949
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.950
+Unexpected IOException with stream: 	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+
+# Created at 2020-12-30T10:20:37.953
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.954
+Unexpected IOException with stream: 	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+
+# Created at 2020-12-30T10:20:37.955
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.957
+Unexpected IOException with stream: 	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+
+# Created at 2020-12-30T10:20:37.958
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.959
+Unexpected IOException with stream: 	at java.util.concurrent.FutureTask.run(Unknown Source)
+
+# Created at 2020-12-30T10:20:37.960
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.961
+Unexpected IOException with stream: 	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+
+# Created at 2020-12-30T10:20:37.962
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.964
+Unexpected IOException with stream: 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+
+# Created at 2020-12-30T10:20:37.965
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.966
+Unexpected IOException with stream: 	at java.lang.Thread.run(Unknown Source)
+
+# Created at 2020-12-30T10:20:37.967
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.969
+Unexpected IOException with stream: Caused by: java.lang.reflect.InvocationTargetException
+
+# Created at 2020-12-30T10:20:37.969
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.970
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+
+# Created at 2020-12-30T10:20:37.971
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.972
+Unexpected IOException with stream: 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+
+# Created at 2020-12-30T10:20:37.974
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.975
+Unexpected IOException with stream: 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+
+# Created at 2020-12-30T10:20:37.976
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.977
+Unexpected IOException with stream: 	at java.lang.reflect.Method.invoke(Unknown Source)
+
+# Created at 2020-12-30T10:20:37.978
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.979
+Unexpected IOException with stream: 	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+
+# Created at 2020-12-30T10:20:37.980
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.981
+Unexpected IOException with stream: 	... 32 more
+
+# Created at 2020-12-30T10:20:37.983
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.986
+Unexpected IOException with stream: Caused by: org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized within 30000ms timeout. Make sure the application under test does not crash and investigate the logcat output. You could also try to increase the value of 'uiautomator2ServerLaunchTimeout' capability. 
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'VICKY', ip: '10.0.75.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_231'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized within 30000ms timeout. Make sure the application under test does not crash and investigate the logcat output. You could also try to increase the value of 'uiautomator2ServerLaunchTimeout' capability. 
+    at getResponseForW3CError (C:\Users\hp\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\errors.js:804:9)
+    at asyncHandler (C:\Users\hp\AppData\Local\Programs\Appium\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\protocol\protocol.js:388:37)
+    at process._tickCallback (internal/process/next_tick.js:68:7)
+
+# Created at 2020-12-30T10:20:37.987
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.988
+Unexpected IOException with stream: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+
+# Created at 2020-12-30T10:20:37.989
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.990
+Unexpected IOException with stream: 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+
+# Created at 2020-12-30T10:20:37.991
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.992
+Unexpected IOException with stream: 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+
+# Created at 2020-12-30T10:20:37.993
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.995
+Unexpected IOException with stream: 	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+
+# Created at 2020-12-30T10:20:37.996
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:37.997
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+
+# Created at 2020-12-30T10:20:37.999
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:38.000
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+
+# Created at 2020-12-30T10:20:38.001
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:38.003
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+
+# Created at 2020-12-30T10:20:38.004
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:38.005
+Unexpected IOException with stream: 	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+
+# Created at 2020-12-30T10:20:38.006
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:38.007
+Unexpected IOException with stream: 	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)
+
+# Created at 2020-12-30T10:20:38.008
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:38.009
+Unexpected IOException with stream: 	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)
+
+# Created at 2020-12-30T10:20:38.010
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:38.011
+Unexpected IOException with stream: 	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)
+
+# Created at 2020-12-30T10:20:38.013
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:38.014
+Unexpected IOException with stream: 	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+
+# Created at 2020-12-30T10:20:38.017
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:38.019
+Unexpected IOException with stream: 	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+
+# Created at 2020-12-30T10:20:38.020
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:38.021
+Unexpected IOException with stream: 	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)
+
+# Created at 2020-12-30T10:20:38.024
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:38.025
+Unexpected IOException with stream: 	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+
+# Created at 2020-12-30T10:20:38.028
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:38.029
+Unexpected IOException with stream: 	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)
+
+# Created at 2020-12-30T10:20:38.030
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:38.031
+Unexpected IOException with stream: 	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+
+# Created at 2020-12-30T10:20:38.033
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:38.034
+Unexpected IOException with stream: 	... 37 more
+
+# Created at 2020-12-30T10:20:38.035
+Unexpected IOException with stream: 
+
+
+# Created at 2020-12-30T10:20:38.039
+Unexpected IOException: 8,1,com.TestCases.LoginTest,DriverInitializataion(com.TestCases.LoginTest),null,Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized within 30000ms timeout. Make sure the application under test does not crash and investigate the logcat output. You could also try to increase the value of 'uiautomator2ServerLaunchTimeout' capability. \000ABuild info: version: '3.14.0'\002C revision: 'aacccce0'\002C time: '2018-08-02T20:19:58.91Z'\000ASystem info: host: 'VICKY'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_231'\000ADriver info: driver.version: AndroidDriver\000Aremote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized within 30000ms timeout. Make sure the application under test does not crash and investigate the logcat output. You could also try to increase the value of 'uiautomator2ServerLaunchTimeout' capability. \000A    at getResponseForW3CError (C:\005CUsers\005Chp\005CAppData\005CLocal\005CPrograms\005CAppium\005Cresources\005Capp\005Cnode_modules\005Cappium\005Cnode_modules\005Cappium-base-driver\005Clib\005Cprotocol\005Cerrors.js:804:9)\000A    at asyncHandler (C:\005CUsers\005Chp\005CAppData\005CLocal\005CPrograms\005CAppium\005Cresources\005Capp\005Cnode_modules\005Cappium\005Cnode_modules\005Cappium-base-driver\005Clib\005Cprotocol\005Cprotocol.js:388:37)\000A    at process._tickCallback (internal/process/next_tick.js:68:7)\000ABuild info: version: '3.14.0'\002C revision: 'aacccce0'\002C time: '2018-08-02T20:19:58.91Z'\000ASystem info: host: 'VICKY'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_231'\000ADriver info: driver.version: AndroidDriver,null,Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized within 30000ms timeout. Make sure the application under test does not crash and investigate the logcat output. You could also try to increase the value of 'uiautomator2ServerLaunchTimeout' capability. \000ABuild info: version: '3.14.0'\002C revision: 'aacccce0'\002C time: '2018-08-02T20:19:58.91Z'\000ASystem info: host: 'VICKY'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_231'\000ADriver info: driver.version: AndroidDriver\000Aremote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized within 30000ms timeout. Make sure the application under test does not crash and investigate the logcat output. You could also try to increase the value of 'uiautomator2ServerLaunchTimeout' capability. \000A    at getResponseForW3CError (C:\005CUsers\005Chp\005CAppData\005CLocal\005CPrograms\005CAppium\005Cresources\005Capp\005Cnode_modules\005Cappium\005Cnode_modules\005Cappium-base-driver\005Clib\005Cprotocol\005Cerrors.js:804:9)\000A    at asyncHandler (C:\005CUsers\005Chp\005CAppData\005CLocal\005CPrograms\005CAppium\005Cresources\005Capp\005Cnode_modules\005Cappium\005Cnode_modules\005Cappium-base-driver\005Clib\005Cprotocol\005Cprotocol.js:388:37)\000A    at process._tickCallback (internal/process/next_tick.js:68:7)\000ABuild info: version: '3.14.0'\002C revision: 'aacccce0'\002C time: '2018-08-02T20:19:58.91Z'\000ASystem info: host: 'VICKY'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_231'\000ADriver info: driver.version: AndroidDriver,LoginTest>TestBase.DriverInitializataion:209 \00BB SessionNotCreated Unable to cre...,org.openqa.selenium.SessionNotCreatedException: \000AUnable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized within 30000ms timeout. Make sure the application under test does not crash and investigate the logcat output. You could also try to increase the value of 'uiautomator2ServerLaunchTimeout' capability. \000ABuild info: version: '3.14.0'\002C revision: 'aacccce0'\002C time: '2018-08-02T20:19:58.91Z'\000ASystem info: host: 'VICKY'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_231'\000ADriver info: driver.version: AndroidDriver\000Aremote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized within 30000ms timeout. Make sure the application under test does not crash and investigate the logcat output. You could also try to increase the value of 'uiautomator2ServerLaunchTimeout' capability. \000A    at getResponseForW3CError (C:\005CUsers\005Chp\005CAppData\005CLocal\005CPrograms\005CAppium\005Cresources\005Capp\005Cnode_modules\005Cappium\005Cnode_modules\005Cappium-base-driver\005Clib\005Cprotocol\005Cerrors.js:804:9)\000A    at asyncHandler (C:\005CUsers\005Chp\005CAppData\005CLocal\005CPrograms\005CAppium\005Cresources\005Capp\005Cnode_modules\005Cappium\005Cnode_modules\005Cappium-base-driver\005Clib\005Cprotocol\005Cprotocol.js:388:37)\000A    at process._tickCallback (internal/process/next_tick.js:68:7)\000ABuild info: version: '3.14.0'\002C revision: 'aacccce0'\002C time: '2018-08-02T20:19:58.91Z'\000ASystem info: host: 'VICKY'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_231'\000ADriver info: driver.version: AndroidDriver\000ACaused by: java.lang.reflect.InvocationTargetException\000ACaused by: org.openqa.selenium.WebDriverException: \000AAn unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized within 30000ms timeout. Make sure the application under test does not crash and investigate the logcat output. You could also try to increase the value of 'uiautomator2ServerLaunchTimeout' capability. \000ABuild info: version: '3.14.0'\002C revision: 'aacccce0'\002C time: '2018-08-02T20:19:58.91Z'\000ASystem info: host: 'VICKY'\002C ip: '10.0.75.1'\002C os.name: 'Windows 10'\002C os.arch: 'amd64'\002C os.version: '10.0'\002C java.version: '1.8.0_231'\000ADriver info: driver.version: AndroidDriver\000Aremote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: The instrumentation process cannot be initialized within 30000ms timeout. Make sure the application under test does not crash and investigate the logcat output. You could also try to increase the value of 'uiautomator2ServerLaunchTimeout' capability. \000A    at getResponseForW3CError (C:\005CUsers\005Chp\005CAppData\005CLocal\005CPrograms\005CAppium\005Cresources\005Capp\005Cnode_modules\005Cappium\005Cnode_modules\005Cappium-base-driver\005Clib\005Cprotocol\005Cerrors.js:804:9)\000A    at asyncHandler (C:\005CUsers\005Chp\005CAppData\005CLocal\005CPrograms\005CAppium\005Cresources\005Capp\005Cnode_modules\005Cappium\005Cnode_modules\005Cappium-base-driver\005Clib\005Cprotocol\005Cprotocol.js:388:37)\000A    at process._tickCallback (internal/process/next_tick.js:68:7)\000A
+
+
+# Created at 2020-12-30T10:20:38.041
+Unexpected IOException: 9,1,com.TestCases.LoginTest,jsonDataInitialaization(com.TestCases.LoginTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.043
+Unexpected IOException: 9,1,com.TestCases.LoginTest,startVideoRecording(com.TestCases.LoginTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.045
+Unexpected IOException: 9,1,com.TestCases.LoginTest,Initialaization(com.TestCases.LoginTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.046
+Unexpected IOException: 5,1,com.TestCases.LoginTest,invalidUsernameTest(com.TestCases.LoginTest),somke,null,null
+
+
+# Created at 2020-12-30T10:20:38.048
+Unexpected IOException: 9,1,com.TestCases.LoginTest,invalidUsernameTest(com.TestCases.LoginTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.050
+Unexpected IOException: 9,1,com.TestCases.LoginTest,stopVideoRecording(com.TestCases.LoginTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.052
+Unexpected IOException: 9,1,com.TestCases.ProductCheckOutTest,jsonDataInitialaization(com.TestCases.ProductCheckOutTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.054
+Unexpected IOException: 9,1,com.TestCases.ProductCheckOutTest,startVideoRecording(com.TestCases.ProductCheckOutTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.055
+Unexpected IOException: 5,1,com.TestCases.ProductCheckOutTest,validateAddToCart(com.TestCases.ProductCheckOutTest),regression,null,null
+
+
+# Created at 2020-12-30T10:20:38.056
+Unexpected IOException: 9,1,com.TestCases.ProductCheckOutTest,validateAddToCart(com.TestCases.ProductCheckOutTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.058
+Unexpected IOException: 9,1,com.TestCases.ProductCheckOutTest,stopVideoRecording(com.TestCases.ProductCheckOutTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.059
+Unexpected IOException: 9,1,com.TestCases.ProductInformationTest,beforeClass(com.TestCases.ProductInformationTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.061
+Unexpected IOException: 9,1,com.TestCases.ProductInformationTest,startVideoRecording(com.TestCases.ProductInformationTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.062
+Unexpected IOException: 9,1,com.TestCases.ProductInformationTest,beforeMethod(com.TestCases.ProductInformationTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.063
+Unexpected IOException: 5,1,com.TestCases.ProductInformationTest,validateProductsOnProductPage(com.TestCases.ProductInformationTest),regression,null,null
+
+
+# Created at 2020-12-30T10:20:38.064
+Unexpected IOException: 9,1,com.TestCases.ProductInformationTest,validateProductsOnProductPage(com.TestCases.ProductInformationTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.066
+Unexpected IOException: 9,1,com.TestCases.ProductInformationTest,afterMethod(com.TestCases.ProductInformationTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.068
+Unexpected IOException: 9,1,com.TestCases.ProductInformationTest,stopVideoRecording(com.TestCases.ProductInformationTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.069
+Unexpected IOException: 9,1,com.TestCases.LoginTest,startVideoRecording(com.TestCases.LoginTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.070
+Unexpected IOException: 9,1,com.TestCases.LoginTest,Initialaization(com.TestCases.LoginTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.071
+Unexpected IOException: 5,1,com.TestCases.LoginTest,invalidPasswordTest(com.TestCases.LoginTest),somke,null,null
+
+
+# Created at 2020-12-30T10:20:38.073
+Unexpected IOException: 9,1,com.TestCases.LoginTest,invalidPasswordTest(com.TestCases.LoginTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.074
+Unexpected IOException: 9,1,com.TestCases.LoginTest,stopVideoRecording(com.TestCases.LoginTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.075
+Unexpected IOException: 9,1,com.TestCases.ProductInformationTest,startVideoRecording(com.TestCases.ProductInformationTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.076
+Unexpected IOException: 9,1,com.TestCases.ProductInformationTest,beforeMethod(com.TestCases.ProductInformationTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.077
+Unexpected IOException: 5,1,com.TestCases.ProductInformationTest,validateProductsOnProductDetailsPage(com.TestCases.ProductInformationTest),regression,null,null
+
+
+# Created at 2020-12-30T10:20:38.079
+Unexpected IOException: 9,1,com.TestCases.ProductInformationTest,validateProductsOnProductDetailsPage(com.TestCases.ProductInformationTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.082
+Unexpected IOException: 9,1,com.TestCases.ProductInformationTest,afterMethod(com.TestCases.ProductInformationTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.084
+Unexpected IOException: 9,1,com.TestCases.ProductInformationTest,stopVideoRecording(com.TestCases.ProductInformationTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.086
+Unexpected IOException: 9,1,com.TestCases.LoginTest,startVideoRecording(com.TestCases.LoginTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.087
+Unexpected IOException: 9,1,com.TestCases.LoginTest,Initialaization(com.TestCases.LoginTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.088
+Unexpected IOException: 5,1,com.TestCases.LoginTest,validUsernameTest(com.TestCases.LoginTest),somke,null,null
+
+
+# Created at 2020-12-30T10:20:38.089
+Unexpected IOException: 9,1,com.TestCases.LoginTest,validUsernameTest(com.TestCases.LoginTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.091
+Unexpected IOException: 9,1,com.TestCases.LoginTest,stopVideoRecording(com.TestCases.LoginTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.093
+Unexpected IOException: 9,1,com.TestCases.ProductCheckOutTest,validateProductOnCartPage(com.TestCases.ProductCheckOutTest),null,Method ProductCheckOutTest.validateProductOnCartPage()[pri:0\002C instance:com.TestCases.ProductCheckOutTest@c46bcd4] depends on not successfully finished methods,null
+
+
+# Created at 2020-12-30T10:20:38.094
+Unexpected IOException: 9,1,com.TestCases.ProductCheckOutTest,validateProductOnInformationPage(com.TestCases.ProductCheckOutTest),null,Method ProductCheckOutTest.validateProductOnInformationPage()[pri:0\002C instance:com.TestCases.ProductCheckOutTest@c46bcd4] depends on not successfully finished methods,null
+
+
+# Created at 2020-12-30T10:20:38.096
+Unexpected IOException: 9,1,com.TestCases.ProductCheckOutTest,validateProductOnOverviewPage(com.TestCases.ProductCheckOutTest),null,Method ProductCheckOutTest.validateProductOnOverviewPage()[pri:0\002C instance:com.TestCases.ProductCheckOutTest@c46bcd4] depends on not successfully finished methods,null
+
+
+# Created at 2020-12-30T10:20:38.097
+Unexpected IOException: 9,1,com.TestCases.ProductCheckOutTest,validateProductOrderSucess(com.TestCases.ProductCheckOutTest),null,Method ProductCheckOutTest.validateProductOrderSucess()[pri:0\002C instance:com.TestCases.ProductCheckOutTest@c46bcd4] depends on not successfully finished methods,null
+
+
+# Created at 2020-12-30T10:20:38.099
+Unexpected IOException: 9,1,com.TestCases.ProductCheckOutTest,logOutAndTearDown(com.TestCases.ProductCheckOutTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.100
+Unexpected IOException: 9,1,com.TestCases.LoginTest,afterTest(com.TestCases.LoginTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.220
+Unexpected IOException: 9,1,com.TestCases.LoginTest,stopAppiumServer(com.TestCases.LoginTest),null,null,null
+
+
+# Created at 2020-12-30T10:20:38.778
+Unexpected IOException: 2,1,org.apache.maven.surefire.testng.TestNGXmlTestSuite,TestSuite,null,null,null
+
+
